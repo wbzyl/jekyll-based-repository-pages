@@ -33,11 +33,13 @@ git checkout --orphan gh-pages
 git rm -rf .
 ```
 
-Następnie dodajemy powyższy plik *index.html*:
+Następnie dodajemy powyższy plik *index.html*, dodajemy go do
+repozytorium, wykonujemy commit i push na GitHub:
 
 ```sh
 git add index.html
 git commit -m "dodano przykładową stronę index,html"
+git push
 ```
 
 Po kilku minutach sprawdzić, czy strona jest dostępna.
