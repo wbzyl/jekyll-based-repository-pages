@@ -43,3 +43,19 @@ git push origin gh-pages
 ```
 
 Po chwili sprawdzić, czy strona *index.html* jest dostępna.
+
+
+## Blogging with Jekyll
+
+Za pomocą programu *jekyll* przekonwertujemy strony wpisane w notacji
+Markdown na HTML. Przy okazji zostaną dodane powtarzające się elementy
+takie jak nagłówek, stopka. Fragement kodu zostaną podkolorowane,
+a wzory matematyczne zapisane za pomocą notacji techowej zostaną
+przeskładane.
+
+Zaczynamy od instalacji języka Ruby oraz gemów:
+
+```sh
+gem install jekyll
+gem install kramdown  # Markdown + LaTeX + kolorowanie składni
+```
