@@ -31,10 +31,11 @@ Do gałęzi dodać taki plik HTML:
 ```sh
 git checkout --orphan gh-pages
 git rm -rf .
-
-Następnie dodajemy plik *index.html*:
-
 ```
+
+Następnie dodajemy powyższy plik *index.html*:
+
+```sh
 git add index.html
 git commit -m "dodano przykładową stronę index,html"
 ```
