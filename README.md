@@ -1,0 +1,41 @@
+## Jekyll based repository pages
+
+Jeśli utworzymy w repozytorium na serwerze Github gałąź
+o nazwie **gh-pages** i~umieścimy w niej plik *index.html*,
+to będzie on dostępny z takiego url:
+
+    http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉
+
+Na przykład, dla repozytorium *xxx* użytkownika *wbzyl*
+będzie to:
+
+    http://wbzyl.github.io/xxx
+
+Są to tak zwane **project pages**, czyli strony www
+przypisane do konkretnego repozytorium.
+
+**Ćwiczenie 1.** Założyć przykładowe repozytorium
+na serwerze *GitHub* i utworzyć w nim gałąź *gh-pages*.
+Do gałęzi dodać taki plik HTML:
+
+```html
+<!doctype html>
+<html lang='pl'>
+  <meta charset='utf-8'>
+  <title>My Repository Pages</title>
+  <h1>My Repository Pages</h1>
+```
+**Uwaga:** Gałąź *gh-pages* tworzymy w taki sposób:
+
+```sh
+git checkout --orphan gh-pages
+git rm -rf .
+
+Następnie dodajemy plik *index.html*:
+
+```
+git add index.html
+git commit -m "dodano przykładową stronę index,html"
+```
+
+Po kilku minutach sprawdzić, czy strona jest dostępna.
