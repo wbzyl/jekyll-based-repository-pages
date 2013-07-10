@@ -4,12 +4,12 @@ Jeśli utworzymy w repozytorium na serwerze Github gałąź o nazwie
 **gh-pages** i umieścimy w niej plik o nazwie *index.html*, to będzie
 on dostępny z takiego url:
 
-    http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉
+    http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
 
 Na przykład, dla repozytorium *xxx* użytkownika *wbzyl*
 będzie to:
 
-    http://wbzyl.github.io/xxx
+    http://wbzyl.github.io/xxx/
 
 Pliki HTML na gałęzi *gh-pages*, to tak zwane **project pages**.
 Innymi słowy, są to strony HTML przypisane do konkretnego
@@ -39,7 +39,7 @@ repozytorium, wykonujemy commit i push na GitHub:
 ```sh
 git add index.html
 git commit -m "dodano przykładową stronę index,html"
-git push
+git push origin gh-pages
 ```
 
-Po kilku minutach sprawdzić, czy strona jest dostępna.
+Po chwili sprawdzić, czy strona *index.html* jest dostępna.
