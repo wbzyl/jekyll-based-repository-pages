@@ -56,5 +56,22 @@ Zaczynamy od instalacji języka Ruby oraz gemów:
 
 ```sh
 gem install jekyll
-gem install kramdown  # Markdown + LaTeX + kolorowanie składni
+gem install coderay   # kolorowanie składni
+gem install kramdown  # Markdown + LaTeX + kolorowanie składni przez coderay
 ```
+
+TODO:
+
+```sh
+jekyll new jekyll
+git add jekyll ; git commit -m "add generated jekyll template"
+
+jekyll serve --watch
+```
+
+* Dodać pusty plik *.nojekyll*.
+* Przenieść zawartość *_site/* na gałąź *gh-pages*.
+* Sprawdzić, że ścieżki do plików CSS nie działają.
+* Poprawić je.
+* Kolorowanie składni: *coderay*. Wyjaśnić dlaczego nie *pygmentize*.
+* Dodać MathJax.
