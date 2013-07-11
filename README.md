@@ -24,7 +24,8 @@ Do gałęzi dodać plik HTML o następującej zawartości:
   <title>My Repository Pages</title>
   <h1>My Repository Pages</h1>
 ```
-**Uwaga:** Gałąź *gh-pages* tworzymy w taki sposób:
+**Uwaga:**
+[Gałąź *gh-pages* tworzymy w taki sposób](https://help.github.com/articles/creating-project-pages-manually):
 
 ```sh
 git checkout --orphan gh-pages
