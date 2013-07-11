@@ -72,7 +72,7 @@ jekyll new blog
 git add jekyll ; git commit -m "add generated jekyll template"
 ```
 
-Teraz generujemy z wygenerowanych szablonów strony HTML:
+Teraz z wygenerowanych szablonów generujemy strony HTML:
 
 ```sh
 jekyll build
