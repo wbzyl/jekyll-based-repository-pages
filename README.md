@@ -1,8 +1,7 @@
 ## Jekyll based repository pages
 
-Jeśli utworzymy w repozytorium na serwerze Github gałąź o nazwie
-**gh-pages** i umieścimy w niej plik o nazwie *index.html*, to będzie
-on dostępny z takiego url:
+Jeśli na gałęzi **gh-pages** repozytorium umieścimy plik *index.html*,
+to będzie on dostępny pod takim url:
 
     http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
 
@@ -11,9 +10,8 @@ będzie to:
 
     http://wbzyl.github.io/xxx/
 
-Pliki HTML na gałęzi *gh-pages*, to tak zwane **project pages**.
-Innymi słowy, są to strony HTML przypisane do konkretnego
-repozytorium.
+Pliki HTML na gałęzi *gh-pages*, tworzą tak zwane **project pages**;
+są to strony HTML przypisane do konkretnego repozytorium.
 
 **Ćwiczenie 1.** Założyć przykładowe repozytorium
 na serwerze *GitHub* i utworzyć w nim gałąź *gh-pages*.
