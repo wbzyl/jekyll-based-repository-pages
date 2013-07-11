@@ -81,8 +81,8 @@ uruchamiamy wbudowany server WWW:
 jekyll serve --watch
 ```
 
-i oglądamy wygenerowane strony *http://localhost:4000*.
-
+i oglądamy wygenerowane strony tutaj *http://localhost:4000*.
+Wygenerowane strony *jekyll* zapisuje w katalogu **_site**.
 
 
 * Dodać pusty plik *.nojekyll*.
