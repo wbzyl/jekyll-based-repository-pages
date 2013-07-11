@@ -53,7 +53,10 @@ okazji *jekyll* doda do stron powtarzające się elementy takie jak
 nagłówek, stopka. Fragmenty kodu zostaną podkolorowane, a wzory
 matematyczne zapisane w notacji techowej zostaną przeskładane.
 
-Zaczynamy od instalacji języka Ruby oraz gemów:
+Zaczynamy od instalacji języka Ruby oraz gemów
+[Jekyll](https://github.com/mojombo/jekyll),
+[CodeRay](http://coderay.rubychan.de/),
+[Kramdown](http://kramdown.rubyforge.org/):
 
 ```sh
 gem install jekyll
