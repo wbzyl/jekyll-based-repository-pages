@@ -28,8 +28,8 @@ Do gałęzi dodać plik HTML o następującej zawartości:
 [Gałąź *gh-pages* tworzymy w taki sposób](https://help.github.com/articles/creating-project-pages-manually):
 
 ```sh
-git checkout --orphan gh-pages
-git rm -rf .
+git checkout --orphan gh-pages # create our branch, without any parents
+git rm -rf .                   # remove all files from the old working tree
 ```
 
 Dopiero teraz dodajemy do katalogu roboczego i repozytorium plik
@@ -37,7 +37,7 @@ Dopiero teraz dodajemy do katalogu roboczego i repozytorium plik
 
 ```sh
 git add index.html
-git commit -m "dodano przykładową stronę index,html"
+git commit -m "add sample page index,html"
 git push origin gh-pages
 ```
 
