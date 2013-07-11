@@ -46,10 +46,12 @@ Po chwili sprawdzić, czy strona *index.html* jest dostępna.
 
 ## Blogging with Jekyll
 
-Za pomocą programu *jekyll* przekonwertujemy strony wpisane w notacji
-Markdown na HTML. Przy okazji zostaną dodane powtarzające się elementy
-takie jak nagłówek, stopka. Fragement kodu zostaną podkolorowane,
-a wzory matematyczne zapisane w notacji techowej zostaną przeskładane.
+Strony będziemy wpisywać w notacji Markdown.
+
+Za pomocą programu *jekyll* będziemy konwertować strony na HTML. Przy
+okazji *jekyll* doda do stron powtarzające się elementy takie jak
+nagłówek, stopka. Fragmenty kodu zostaną podkolorowane, a wzory
+matematyczne zapisane w notacji techowej zostaną przeskładane.
 
 Zaczynamy od instalacji języka Ruby oraz gemów:
 
