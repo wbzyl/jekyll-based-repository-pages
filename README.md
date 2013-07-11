@@ -78,14 +78,26 @@ Teraz z wygenerowanych szablonów generujemy strony HTML:
 jekyll build
 ```
 
-uruchamiamy wbudowany server WWW:
+i uruchamiamy wbudowany server WWW:
 
 ```sh
 jekyll serve --watch
 ```
 
 i oglądamy wygenerowane strony tutaj *http://localhost:4000*.
-Wygenerowane strony *jekyll* zapisuje w katalogu **_site**.
+
+
+## GitHub Pages
+
+Program *jekyll* wygenerowane pliki zapisuje w katalogu **_site**.
+
+Całą zawartość tego katalogu zapiszemy na gałęzi *gh-pages*.
+
+
+**Uwaga:** GitHub może uruchomić program *jekyll* za nas.
+My wygenerujemy strony sami. Dlaczego?
+Gem Kramdown nie działa z Pygements. Wersje użytych gemów
+przez GitHub i przez nas mogą być inne.
 
 
 * Dodać pusty plik *.nojekyll*.
