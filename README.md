@@ -59,14 +59,22 @@ gem install coderay   # kolorowanie składni
 gem install kramdown  # Markdown + LaTeX + kolorowanie składni przez coderay
 ```
 
-TODO:
+Następnie generujemy szablon bloga w katalogu *blog*
+i dodajemy wygenrowane pliki do repozytorium:
 
 ```sh
-jekyll new jekyll
+jekyll new blog
 git add jekyll ; git commit -m "add generated jekyll template"
-
-jekyll serve --watch
 ```
+
+Teraz możemy uruchomić server WWW i obejrzeć wygenerowane
+z szablonów strony HTML:
+
+```sh
+jekyll serve --watch # blog powinien bć dostępny z http://localhost:4000
+```
+
+
 
 * Dodać pusty plik *.nojekyll*.
 * Przenieść zawartość *_site/* na gałąź *gh-pages*.
