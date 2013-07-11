@@ -15,7 +15,7 @@ są to strony HTML przypisane do konkretnego repozytorium.
 
 **Ćwiczenie 1.** Założyć przykładowe repozytorium
 na serwerze *GitHub* i utworzyć w nim gałąź *gh-pages*.
-Do gałęzi dodać taki plik HTML:
+Do gałęzi dodać plik HTML o następującej zawartości:
 
 ```html
 <!doctype html>
