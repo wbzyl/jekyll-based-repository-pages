@@ -32,8 +32,8 @@ git checkout --orphan gh-pages
 git rm -rf .
 ```
 
-Dopiero teraz dodajemy do katalogu roboczego plik *index.html*,
-dodajemy go do repozytorium, wykonujemy commit i push na GitHub:
+Dopiero teraz dodajemy do katalogu roboczego i repozytorium plik
+*index.html*, oraz wykonujemy commit i push na GitHub:
 
 ```sh
 git add index.html
