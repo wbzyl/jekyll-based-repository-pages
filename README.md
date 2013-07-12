@@ -123,8 +123,8 @@ git add _site/.nojekyll
 git commit -m "dodano plik .nojekyll do katalogu _site"w
 ```
 
-Dopiero teraz przenosimy zawartość katalogu *_site* na gałąź
-*gh-pages*.
+**Dopiero teraz przenosimy zawartość katalogu *_site* na gałąź
+*gh-pages*.**
 
 ```sh
 git checkout -b gh-pages
@@ -141,6 +141,9 @@ Wchodzimy na stronę
 
 i widzimy, że nie działają ścieżki do plików CSS oraz do posta.
 
+----
+![jekyll index page](/images/index-gh-page.png)
+----
 
 
 
