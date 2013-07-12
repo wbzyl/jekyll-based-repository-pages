@@ -145,7 +145,7 @@ i widzimy, że nie działają ścieżki do plików CSS:
 ![jekyll index page](/images/index-gh-page.png)
 ----
 
-Niepoprawny jest też link do posta.
+Niepoprawny jest też link do posta *Welcome Jekyll!.
 
 
 
