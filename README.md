@@ -107,15 +107,32 @@ być różne. Dodatkowo kolorowanie składni w Kramdown nie działa
 z Pygements.
 
 Program *jekyll* generowane strony zapisuje w katalogu *_sites*.
-Dodamy ten katalog do repozytorium. W tym celu usuwamy linijkę
-z *_site* z pliku *.gitignore* i wykonujemy:
+Dodamy ten katalog do repozytorium.
+
+W tym celu usuwamy linijkę z *_site* z pliku *.gitignore* i wykonujemy:
 
 ```sh
 git add _site/
 git commit -m "dodano katalog _site do repo"
 ```
+dodajemy pusty plik *.nojekyll* informujący serwer GitHub, aby
+nie uruchamiał programu *jekyll* na gałęzi *gh-pages*:
 
-* Dodać pusty plik *.nojekyll*.
+```sh
+touch _site/.nojekyll
+git add _site/.nojekyll
+git commit -m "dodano plik .nojekyll do katalogu _site"w
+```
+
+Dopiero teraz przenosimy zawartość katalogu *_site* na gałąź
+*gh-pages*.
+
+```sh
+
+```
+
+
+
 * Przenieść zawartość *_site/* na gałąź *gh-pages*.
 * Sprawdzić, że ścieżki do plików CSS nie działają.
 * Poprawić je.
