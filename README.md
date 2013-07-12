@@ -93,7 +93,7 @@ i widzimy, że musimy poprawić kilka rzeczy:
 ----
 
 na przykład: wpisać nazwę bloga i swoje dane.
-Ale zajmiemy się tymi poprawkami później.
+Ale tymi poprawkami zajmiemy się później.
 
 
 ## GitHub Pages
@@ -101,10 +101,9 @@ Ale zajmiemy się tymi poprawkami później.
 Chociaż gałąź *gh-pages* jest automatycznie „przepuszczana” przez
 program *jekyll* i wygenerowane strony są serwowane przez serwer
 GitHub, to my **nie będziemy** korzystać z tego automatu.
-
 Dlaczego? Ponieważ wersje gemów użytych przez GitHub i przez nas mogą
 być różne. Dodatkowo kolorowanie składni w Kramdown nie działa
-z Pygements.
+na serwerze GitHub.
 
 Program *jekyll* generowane strony zapisuje w katalogu *_sites*.
 Dodamy ten katalog do repozytorium.
