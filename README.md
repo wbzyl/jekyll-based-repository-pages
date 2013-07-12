@@ -105,7 +105,7 @@ Dlaczego? Ponieważ wersje gemów użytych przez GitHub i przez nas mogą
 być różne. Dodatkowo kolorowanie składni w Kramdown nie działa
 na serwerze GitHub.
 
-Program *jekyll* generowane strony zapisuje w katalogu *_sites*.
+Program *jekyll* generowane strony zapisuje w katalogu *\_sites*.
 Dodamy ten katalog do repozytorium.
 
 W tym celu usuwamy linijkę z *_site* z pliku *.gitignore* i wykonujemy:
