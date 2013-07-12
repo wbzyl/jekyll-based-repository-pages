@@ -86,11 +86,14 @@ jekyll serve --watch
 ```
 
 oglądamy wygenerowane strony tutaj *http://localhost:4000*.
-Widzimy, że musimy poprawić kilka rzeczy:
+i widzimy, że musimy poprawić kilka rzeczy:
 
 ----
 ![jekyll index page](/images/index-page.png)
 ----
+
+na przykład: wpisać nazwę bloga i swoje dane.
+
 
 ## GitHub Pages
 
