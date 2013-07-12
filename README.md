@@ -127,9 +127,9 @@ Dopiero teraz przenosimy zawartość katalogu *_site* na gałąź
 *gh-pages*.
 
 ```sh
-git checkout gh-pages
+git checkout -b gh-pages
 git read-tree -u master:blog
-git commit -m 'gh-pages documentation'
+git commit -m 'copy content of blog/ from master to gh-pages'
 git push origin gh-pages
 git checkout master
 ```
