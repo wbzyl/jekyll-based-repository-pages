@@ -88,8 +88,9 @@ jekyll serve --watch
 oglądamy wygenerowane strony tutaj *http://localhost:4000*.
 Widzimy, że musimy poprawić kilka rzeczy:
 
+----
 ![jekyll index page](/images/index-page.png)
-
+----
 
 ## GitHub Pages
 
