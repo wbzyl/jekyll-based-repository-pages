@@ -75,6 +75,7 @@ git add jekyll ; git commit -m "add generated jekyll template"
 Teraz z wygenerowanych szablonów generujemy strony HTML:
 
 ```sh
+cd blog
 jekyll build
 ```
 
@@ -84,7 +85,10 @@ i uruchamiamy wbudowany server WWW:
 jekyll serve --watch
 ```
 
-i oglądamy wygenerowane strony tutaj *http://localhost:4000*.
+oglądamy wygenerowane strony tutaj *http://localhost:4000*.
+Widzimy, że musimy poprawić kilka rzeczy:
+
+![jekyll index page](/images/index-page.png)
 
 
 ## GitHub Pages
