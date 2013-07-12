@@ -133,8 +133,17 @@ git commit -m 'copy content of blog/ from master to gh-pages'
 git push origin gh-pages
 git checkout master
 ```
+Wchodzimy na stronę
 
-* Sprawdzić, że ścieżki do plików CSS nie działają.
-* Poprawić je.
-* Kolorowanie składni: *coderay*. Wyjaśnić dlaczego nie *pygmentize*.
-* Dodać MathJax.
+```sh
+ http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
+```
+
+i widzimy, że nie działają ścieżki do plików CSS oraz do posta.
+
+
+
+
+
+
+**TODO:** Dodać MathJax.
