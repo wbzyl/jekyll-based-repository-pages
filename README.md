@@ -135,7 +135,6 @@ git checkout master
 ```
 
 
-
 * Przenieść zawartość *_site/* na gałąź *gh-pages*.
 * Sprawdzić, że ścieżki do plików CSS nie działają.
 * Poprawić je.
