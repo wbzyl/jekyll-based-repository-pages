@@ -148,5 +148,21 @@ i widzimy, że nie działają ścieżki do plików CSS:
 Niepoprawny jest też link do posta *Welcome Jekyll!.
 
 
+### Fix paths
+
+Ścieżki poprawimy korzystając z skryptu *fix-paths.sh*:
+
+```sh
+
+```
+
+Skrypt uruchamiamy podając ścieżki do plików:
+
+```sh
+./fix-paths.sh blog/config.yml blog/index.html _layout/default.html
+```
+
+
+
 
 **TODO:** Dodać MathJax.
