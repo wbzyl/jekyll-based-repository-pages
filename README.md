@@ -114,7 +114,7 @@ W tym celu usuwamy linijkę z *_site* z pliku *.gitignore* i wykonujemy:
 git add _site/
 git commit -m "dodano katalog _site do repo"
 ```
-dodajemy pusty plik *.nojekyll* informujący serwer GitHub, aby
+i dodajemy pusty plik *.nojekyll* informujący serwer GitHub, aby
 nie uruchamiał programu *jekyll* na gałęzi *gh-pages*:
 
 ```sh
@@ -127,7 +127,11 @@ Dopiero teraz przenosimy zawartość katalogu *_site* na gałąź
 *gh-pages*.
 
 ```sh
-
+git checkout gh-pages
+git read-tree -u master:blog
+git commit -m 'gh-pages documentation'
+git push origin gh-pages
+git checkout master
 ```
 
 
