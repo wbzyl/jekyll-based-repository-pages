@@ -128,14 +128,12 @@ Dopiero teraz przenosimy zawartość katalogu *_site* na gałąź
 
 ```sh
 git checkout -b gh-pages
-git read-tree -u master:blog/_site/
+git read-tree -m -u master:blog/_site/
 git commit -m 'copy content of blog/ from master to gh-pages'
 git push origin gh-pages
 git checkout master
 ```
 
-
-* Przenieść zawartość *_site/* na gałąź *gh-pages*.
 * Sprawdzić, że ścieżki do plików CSS nie działają.
 * Poprawić je.
 * Kolorowanie składni: *coderay*. Wyjaśnić dlaczego nie *pygmentize*.
