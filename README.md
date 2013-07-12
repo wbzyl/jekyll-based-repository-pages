@@ -93,20 +93,27 @@ i widzimy, że musimy poprawić kilka rzeczy:
 ----
 
 na przykład: wpisać nazwę bloga i swoje dane.
+Ale zajmiemy się tymi poprawkami później.
 
 
 ## GitHub Pages
 
-Program *jekyll* wygenerowane pliki zapisuje w katalogu **_site**.
+Chociaż gałąź *gh-pages* jest automatycznie „przepuszczana” przez
+program *jekyll* i wygenerowane strony są serwowane przez serwer
+GitHub, to my **nie będziemy** korzystać z tego automatu.
 
-Całą zawartość tego katalogu zapiszemy na gałęzi *gh-pages*.
+Dlaczego? Ponieważ wersje gemów użytych przez GitHub i przez nas mogą
+być różne. Dodatkowo kolorowanie składni w Kramdown nie działa
+z Pygements.
 
+Program *jekyll* generowane strony zapisuje w katalogu *_sites*.
+Dodamy ten katalog do repozytorium. W tym celu usuwamy linijkę
+z *_site* z pliku *.gitignore* i wykonujemy:
 
-**Uwaga:** GitHub może uruchomić program *jekyll* za nas.
-My wygenerujemy strony sami. Dlaczego?
-Gem Kramdown nie działa z Pygements. Wersje użytych gemów
-przez GitHub i przez nas mogą być inne.
-
+```sh
+git add _site/
+git commit -m "dodano katalog _site do repo"
+```
 
 * Dodać pusty plik *.nojekyll*.
 * Przenieść zawartość *_site/* na gałąź *gh-pages*.
