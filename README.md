@@ -125,14 +125,14 @@ GitHub, aby nie uruchamiał automatycznie programu *jekyll*:
 ```sh
 touch _site/.nojekyll
 git add _site/.nojekyll
-git commit -m "dodano plik .nojekyll do katalogu _site"w
+git commit -m "dodano plik .nojekyll do katalogu _site"
 ```
 
 **Dopiero teraz przenosimy zawartość katalogu *_site* na gałąź
 *gh-pages*.**
 
 ```sh
-git checkout -b gh-pages
+git checkout gh-pages
 git read-tree -m -u master:blog/_site/
 git commit -m 'copy content of blog/ from master to gh-pages'
 git push origin gh-pages
