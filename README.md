@@ -163,10 +163,18 @@ Wszystkie te poprawki wykonamy korzystając ze skryptów
 napisanych w języku powłoki Bash.
 
 
-#### fix-config.sh
+#### *fix-config.sh*
 
 Skrypt uruchamiamy podając ścieżkę do pliku *_config.yml*:
 
 ```sh
 ./fix-config.sh blog/config.yml
 ```
+
+#### *customize.sh*
+
+
+#### *fix-paths.sh*
+
+
+#### *mathjax.sh*
