@@ -101,10 +101,11 @@ Ale tymi poprawkami zajmiemy się później.
 ## GitHub Pages
 
 Chociaż gałąź *gh-pages* jest automatycznie „przepuszczana” przez
-program *jekyll* i wygenerowane strony są serwowane przez serwer
-GitHub, to my **nie będziemy** korzystać z tego automatu.
+program *jekyll*
+(a wygenerowane strony są serwowane przez serwer GitHub),
+to my **nie będziemy** korzystać z tego mechanizmu.
 Dlaczego? Ponieważ wersje gemów użytych przez GitHub i przez nas mogą
-być różne. Dodatkowo kolorowanie składni w Kramdown nie działa
+być różne; dodatkowo kolorowanie składni w Kramdown nie działa
 na serwerze GitHub.
 
 Program *jekyll* generowane strony zapisuje w katalogu *\_sites*.
@@ -146,7 +147,6 @@ i widzimy, że nie działają ścieżki do plików CSS:
 
 ----
 ![jekyll index page](/images/index-gh-page.png)
-----
 
 Niepoprawny jest też link do posta *Welcome Jekyll!.
 
