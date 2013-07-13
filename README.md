@@ -50,8 +50,8 @@ Strony będziemy wpisywać w notacji
 matematyczne będziemy wpisywać w notacji techowej.
 
 Programu *jekyll* użyjemy do konwersji plików na HTML. W trakcie
-konwersji zostaną dodane powtarzające się elementy do plików HTML,
-np. nagłówki, stopki; fragmenty kodu zostaną podkolorowane, a wzory
+konwersji zostaną dodane do plików HTML powtarzające się elementy:
+nagłówki, stopki; fragmenty kodu zostaną podkolorowane, a wzory
 matematyczne zapisane w notacji techowej zostaną przetłumaczone na
 HTML.
 
