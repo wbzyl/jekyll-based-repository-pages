@@ -47,7 +47,7 @@ Po chwili sprawdzić, czy strona *index.html* jest dostępna.
 
 Strony będziemy wpisywać w notacji
 [Markdown](http://www.ctrlshift.net/project/markdowneditor/), a wzory
-matematyczne będziemy wpisywać w notacji techowej.
+matematyczne – w notacji techowej.
 
 Do konwersji plików na HTML użyjemy programu *jekyll*. W trakcie
 konwersji *jekyll* doda do plików HTML powtarzające się elementy:
