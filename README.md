@@ -51,7 +51,7 @@ matematyczne – w notacji techowej.
 
 Do konwersji plików na HTML użyjemy programu *jekyll*. W trakcie
 konwersji *jekyll* doda do plików HTML powtarzające się elementy:
-nagłówki, stopki; fragmenty kodu zostaną podkolorowane, a wzory
+nagłówki, stopki itp; fragmenty kodu zostaną podkolorowane, a wzory
 matematyczne zapisane w notacji techowej zostaną przetłumaczone na
 HTML.
 
