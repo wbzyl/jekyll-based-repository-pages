@@ -45,8 +45,9 @@ Po chwili sprawdzić, czy strona *index.html* jest dostępna.
 
 ## Blogging with Jekyll
 
-Strony będziemy wpisywać w notacji Markdown,
-a wzory matematyczne będziemy wpisywać w notacji techowej.
+Strony będziemy wpisywać w notacji
+[Markdown](http://www.ctrlshift.net/project/markdowneditor/), a wzory
+matematyczne będziemy wpisywać w notacji techowej.
 
 Programu *jekyll* użyjemy do konwersji plików na HTML. W trakcie
 konwersji zostaną dodane powtarzające się elementy do plików HTML,
