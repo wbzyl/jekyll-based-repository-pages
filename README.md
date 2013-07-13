@@ -27,7 +27,7 @@ Do gałęzi dodać plik HTML o następującej zawartości:
 [Gałąź *gh-pages* tworzymy w taki sposób](https://help.github.com/articles/creating-project-pages-manually):
 
 ```sh
-git checkout --orphan gh-pages # create our branch, without any parents
+git checkout --orphan gh-pages # create branch, without any parents
 git rm -rf .                   # remove all files from the old working tree
 ```
 
@@ -45,12 +45,14 @@ Po chwili sprawdzić, czy strona *index.html* jest dostępna.
 
 ## Blogging with Jekyll
 
-Strony będziemy wpisywać w notacji Markdown.
+Strony będziemy wpisywać w notacji Markdown,
+a wzory matematyczne będziemy wpisywać w notacji techowej.
 
-Za pomocą programu *jekyll* będziemy konwertować strony na HTML. Przy
-okazji *jekyll* doda do stron powtarzające się elementy takie jak
-nagłówek, stopka. Fragmenty kodu zostaną podkolorowane, a wzory
-matematyczne zapisane w notacji techowej zostaną przeskładane.
+Programu *jekyll* użyjemy do konwersji plików na HTML. W trakcie
+konwersji zostaną dodane powtarzające się elementy do plików HTML,
+np. nagłówki, stopki; fragmenty kodu zostaną podkolorowane, a wzory
+matematyczne zapisane w notacji techowej zostaną przetłumaczone na
+HTML.
 
 Zaczynamy od instalacji języka Ruby oraz gemów
 [Jekyll](https://github.com/mojombo/jekyll),
