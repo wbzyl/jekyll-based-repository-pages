@@ -205,7 +205,7 @@ Przykładowe wywołanie:
 ./fix-config.sh 'XXX Blog' /xxx/ blog/_config.yml
 ```
 
-#### *customize.sh*
+#### TODO: *customize.sh*
 
 Korzystamy z programu *sed*:
 
