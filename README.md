@@ -49,8 +49,8 @@ Strony będziemy wpisywać w notacji
 [Markdown](http://www.ctrlshift.net/project/markdowneditor/), a wzory
 matematyczne będziemy wpisywać w notacji techowej.
 
-Programu *jekyll* użyjemy do konwersji plików na HTML. W trakcie
-konwersji zostaną dodane do plików HTML powtarzające się elementy:
+Do konwersji plików na HTML użyjemy programu *jekyll*. W trakcie
+konwersji *jekyll* doda do plików HTML powtarzające się elementy:
 nagłówki, stopki; fragmenty kodu zostaną podkolorowane, a wzory
 matematyczne zapisane w notacji techowej zostaną przetłumaczone na
 HTML.
