@@ -111,7 +111,7 @@ na serwerze GitHub.
 Program *jekyll* generowane strony zapisuje w katalogu *\_sites*.
 Dodamy ten katalog do repozytorium.
 
-W tym celu usuwamy linijkę zawierającą *_site* z pliku *.gitignore* i wykonujemy:
+W tym celu usuwamy linijkę zawierającą __site_ z pliku *.gitignore* i wykonujemy:
 
 ```sh
 git add _site/
