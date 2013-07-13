@@ -119,7 +119,7 @@ git add _site/
 git commit -m "dodano katalog _site do repo"
 ```
 
-Przy okazji dodajemy pusty plik *.nojekyll*, który informuje serwer
+Dodajemy pusty plik *.nojekyll*, który informuje serwer
 GitHub, aby nie uruchamiał automatycznie programu *jekyll*:
 
 ```sh
