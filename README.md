@@ -10,7 +10,7 @@ Na przykład, dla repozytorium *xxx* użytkownika *wbzyl* będzie to taki URL:
     http://wbzyl.github.io/xxx/
 
 Pliki na gałęzi *gh-pages*, tworzą tak zwane **project pages**.
-Innymi słowy, są to strony HTML przypisane do konkretnego repozytorium.
+Innymi słowy, są to strony WWW przypisane do konkretnego repozytorium.
 
 **Ćwiczenie 1.** Założyć przykładowe repozytorium
 na serwerze *GitHub* i utworzyć w nim gałąź *gh-pages*.
