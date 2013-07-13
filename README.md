@@ -94,7 +94,7 @@ i widzimy, że musimy poprawić kilka rzeczy:
 ----
 ![jekyll index page](/images/index-page.png)
 
-na przykład: wpisać swoją nazwę bloga i swoje dane.
+Na przykład: wpisać swoją nazwę bloga i swoje dane.
 Ale tymi poprawkami zajmiemy się później.
 
 
@@ -149,11 +149,11 @@ i widzimy, że *jekyll* wygenerował nipoprawne ścieżki do plików CSS:
 ----
 ![jekyll index page](/images/index-gh-page.png)
 
-oraz niepoprawny link do posta *Welcome Jekyll!*, które musimy
-jakoś poprawić.
+Po kliknięciu w link posta *Welcome Jekyll!*, przekonujemy się
+że ten link nie działa.
 
 Podsumowując – nie wszystko jeszcze działa.
-Rzeczy do poprawy:
+Oto lista wszystkich rzeczy do poprawy:
 
 1. Skonfigurować program *jekyll* – *fix-config.sh*.
 2. Zmienić nazwę bloga, wpisać swoje dane do szablonów – *customize.sh*.
