@@ -144,17 +144,29 @@ Wchodzimy na stronę
  http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
 ```
 
-i widzimy, że nie działają ścieżki do plików CSS:
+i widzimy, że *jekyll* wygenerował nipoprawne ścieżki do plików CSS:
 
 ----
 ![jekyll index page](/images/index-gh-page.png)
 
-Niepoprawny jest też link do posta *Welcome Jekyll!.
+oraz niepoprawny link do posta *Welcome Jekyll!*, które musimy
+jakoś poprawić.
+
+Podsumowując – nie wszystko jeszcze działa.
+Rzeczy do poprawy:
+
+1. Skonfigurować program *jekyll* – *fix-config.sh*.
+2. Zmienić nazwę bloga, wpisać swoje dane do szablonów – *customize.sh*.
+3. Poprawić nieprawidłowe ścieżki – *fix-paths.sh*.
+4. Dodać MathJax – *mathjax.sh*.
+
+Wszystkie te poprawki wykonamy korzystając ze skryptów
+napisanych w języku powłoki Bash.
 
 
 ### Fix paths
 
-Ścieżki poprawimy korzystając z skryptu *fix-paths.sh*:
+Ścieżki poprawimy korzystając z skryptu *fix-config.sh*:
 
 ```sh
 
