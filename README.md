@@ -169,7 +169,6 @@ Korzystamy z programu *sed*:
 
 ```sh
 #!/bin/bash
-# ./fix-config.sh 'XXX Blog' /xxx/ blog/_config.yml
 
 blog_name=${1:-My Awesome Blog}
 repo_name=${2:-/}
@@ -200,14 +199,39 @@ baseurl: ${repo_name}
 " $config_file
 ```
 
-Skrypt uruchamiamy podając ścieżkę do pliku *_config.yml*:
+Przykładowe wywołanie:
 
 ```sh
-./fix-config.sh blog/config.yml
+./fix-config.sh 'XXX Blog' /xxx/ blog/_config.yml
 ```
 
 #### *customize.sh*
 
+Korzystamy z programu *sed*:
+
+```sh
+#!/bin/bash
+# ./customize.sh
+
+name=${1:-}
+name=${2:-}
+
+sed -i "
+s|Your New Jekyll Site|XXL Blog|
+s|github.com/yourusername|github.com/wbzyl|g
+s|twitter.com/yourusername|twitter.com/wbzyl|g
+s|Your Name|Włodek Bzyl|
+s|What You Are|Twitter|
+/your@email.com/d
+s|name: Your New Jekyll Site|name: XXL Blog|
+s|br /|br|g
+" "$@"
+
+Przykładowe wywołanie:
+
+```sh
+./customize.sh ...
+```
 
 #### *fix-paths.sh*
 
