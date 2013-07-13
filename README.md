@@ -116,8 +116,9 @@ W tym celu usuwamy linijkę z *_site* z pliku *.gitignore* i wykonujemy:
 git add _site/
 git commit -m "dodano katalog _site do repo"
 ```
-i dodajemy pusty plik *.nojekyll* informujący serwer GitHub, aby
-nie uruchamiał programu *jekyll* na gałęzi *gh-pages*:
+
+Przy okazji dodajemy pusty plik *.nojekyll*, który informuje serwer
+GitHub, aby nie uruchamiał automatycznie programu *jekyll*:
 
 ```sh
 touch _site/.nojekyll
