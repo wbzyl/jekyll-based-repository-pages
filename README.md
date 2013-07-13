@@ -9,7 +9,7 @@ Na przykład, dla repozytorium *xxx* użytkownika *wbzyl* będzie to taki URL:
 
     http://wbzyl.github.io/xxx/
 
-Pliki HTML na gałęzi *gh-pages*, tworzą tak zwane **project pages**.
+Pliki na gałęzi *gh-pages*, tworzą tak zwane **project pages**.
 Innymi słowy, są to strony HTML przypisane do konkretnego repozytorium.
 
 **Ćwiczenie 1.** Założyć przykładowe repozytorium
