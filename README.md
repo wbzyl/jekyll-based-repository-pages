@@ -152,8 +152,7 @@ i widzimy, że *jekyll* wygenerował nipoprawne ścieżki do plików CSS:
 Po kliknięciu w link posta *Welcome Jekyll!*, przekonujemy się
 że ten link nie działa.
 
-Podsumowując mamy kilka rzeczy do poprawy..
-Oto lista wszystkich poprawek:
+Podsumowując mamy kilka rzeczy do poprawy. Oto cała lista:
 
 1. Skonfigurować program *jekyll* – *fix-config.sh*.
 2. Zmienić nazwę bloga, wpisać swoje dane do szablonów – *customize.sh*.
