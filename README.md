@@ -174,7 +174,7 @@ blog_name=${1:-My Awesome Blog}
 repo_name=${2:-/}
 config_file=${3:-blog/_config.yml}
 
-sed "
+sed -i "
 /name/ c\\
 name=${blog_name}
 
@@ -215,6 +215,9 @@ Korzystamy z programu *sed*:
 name=${1:-blog/}
 name=${2:-blog/}
 
+sed -i '
+
+' "$@"
 ```
 
 Przykładowe wywołanie:
