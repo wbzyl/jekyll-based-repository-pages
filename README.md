@@ -237,7 +237,7 @@ blog będzie dostępny lokalnie z takiego URL:
 http://localhost:4000/〈baseurl〉/  #<= z ukośnikiem `/` na końcu url
 ```
 
-gdzie *baseurl* dopisał do pliku *_config.yml* poprzedni skrypt.
+gdzie *baseurl* dodał do pliku *_config.yml* poprzedni skrypt.
 
 
 #### *customize.sh*
