@@ -273,6 +273,22 @@ Przykładowe wywołanie:
 
 1\. Dopisać `{% include mathjax.html %}` do pliku *_layouts/default.html*.
 
+```sh
+#!/bin/bash
+
+sed -i '
+s|^<!DOCTYPE html>$|<!doctype html>|
+/<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">/ a\
+        {% include mathjax.html %}
+' "$@"
+```
+
+Uruchomić powyższy skrypt:
+
+```sh
+./mathjax.sh blog/_layouts/default.html
+```
+
 2\. Utworzyć katalog *_includes* i dodać do niego plik
 *mathjax.html* o takiej zawartości:
 
