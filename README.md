@@ -234,8 +234,11 @@ jekyll serve --watch
 blog będzie dostępny lokalnie z takiego URL:
 
 ```
-http://localhost:4000/abc/  #<= z ukośnikiem `/` na końcu url
+http://localhost:4000/〈baseurl〉/  #<= z ukośnikiem `/` na końcu url
 ```
+
+gdzie *baseurl* dopisał do pliku *_config.yml* poprzedni skrypt.
+
 
 #### *customize.sh*
 
