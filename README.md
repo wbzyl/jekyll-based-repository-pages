@@ -225,10 +225,16 @@ Wywołanie skryptu:
 ./fix-paths.sh blog/index.html blog/_layouts/default.html
 ```
 
-Po tych zmianach blog będzie dostępny lokalnie z takiego URL:
+Po tych zmianach i uruchomieniu serwera:
+
+```sh
+jekyll serve --watch
+```
+
+blog będzie dostępny lokalnie z takiego URL:
 
 ```
-http://localhost:4000/abc/  #<= z `/` na końcu
+http://localhost:4000/abc/  #<= z ukośnikiem `/` na końcu url
 ```
 
 #### *customize.sh*
