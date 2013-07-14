@@ -205,6 +205,25 @@ Przykładowe wywołanie:
 ./fix-config.sh 'XXX Blog' /xxx/ blog/_config.yml
 ```
 
+#### *fix-paths.sh*
+
+Korzystamy z programu *sed*:
+
+```sh
+#!/bin/bash
+
+name=${1:-blog/}
+name=${2:-blog/}
+
+```
+
+Przykładowe wywołanie:
+
+```sh
+./fix-paths.sh blog/index.html blog/default.html
+```
+
+
 #### TODO: *customize.sh*
 
 Korzystamy z programu *sed*:
@@ -232,8 +251,5 @@ Przykładowe wywołanie:
 ```sh
 ./customize.sh ...
 ```
-
-#### *fix-paths.sh*
-
 
 #### *mathjax.sh*
