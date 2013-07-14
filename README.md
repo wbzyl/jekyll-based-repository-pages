@@ -271,7 +271,7 @@ Przykładowe wywołanie:
 
 #### *mathjax.sh*
 
-1\. Dodać `{% include mathjax.html %}` do layoutu.
+1\. Dopisać `{% include mathjax.html %}` do pliku *_layouts/default.html*.
 
 2\. Utworzyć katalog *_includes* i dodać do niego plik
 *mathjax.html* o takiej zawartości:
