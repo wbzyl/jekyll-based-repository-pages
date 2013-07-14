@@ -170,8 +170,8 @@ Korzystamy z programu *sed*:
 ```sh
 #!/bin/bash
 
-blog_name=${1:-My Awesome Blog}
-repo_name=${2:-/}
+repo_name=${1:-}
+blog_name=${2:-My Awesome Blog}
 config_file=${3:-blog/_config.yml}
 
 sed -i "
