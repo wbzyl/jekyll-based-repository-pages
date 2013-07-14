@@ -242,30 +242,131 @@ gdzie *baseurl* dodał do pliku *_config.yml* poprzedni skrypt.
 
 #### *customize.sh*
 
-Korzystamy z programu *sed*:
+Oczywiście w skrypcie poniżej wstawiamy swoje dane:
 
 ```sh
 #!/bin/bash
-# ./customize.sh
 
-name=${1:-}
-name=${2:-}
-
-sed -i "
-s|Your New Jekyll Site|XXL Blog|
-s|github.com/yourusername|github.com/wbzyl|g
-s|twitter.com/yourusername|twitter.com/wbzyl|g
+sed -i '
+s|title: Your New Jekyll Site|title: My Awesome Blog|
+s|<html>|<html lang="pl">|
+s|content="width=device-width"|content="width=device-width,initial-scale=1"|
+s|<h1 class="title"><a href="/">|<h1 class="title"><a href="/">|
+s|<a class="extra" href="/">home|<a class="extra" href="http://tao.inf.ug.edu.pl">home
+s|href="http://github.com/yourusername/">github.com/yourusername|href="http://github.com/wbzyl/">github.com/wbzyl|
 s|Your Name|Włodek Bzyl|
-s|What You Are|Twitter|
-/your@email.com/d
-s|name: Your New Jekyll Site|name: XXL Blog|
+
 s|br /|br|g
-" "$@"
+
+/What You Are/ d
+/twitter.com/ d
+/your@email.com/ d
+' "$@"
 
 Przykładowe wywołanie:
 
 ```sh
-./customize.sh ...
+./customize.sh blog/index.html blog/_layouts/default.html
 ```
 
-#### *mathjax.sh*
+#### TODO: *mathjax.sh*
+
+1\. Dodać `{% include mathjax.html %}` do layoutu.
+
+2\. Utworzyć katalog *_includes* i dodać do niego plik
+*mathjax.html* o takiej zawartości:
+
+```html
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    displayAlign: "left",
+    displayIndent: "2em",
+
+    TeX: {
+      extensions: ["color.js"],
+      Macros: {
+        MM: "{\bf M}",
+        bold: ["{\bf #1}",1]
+      }
+    },
+
+    tex2jax: {
+      inlineMath: [ ["$","$"] ],
+      displayMath: [ ["$$","$$"] ],
+      balanceBraces: true,
+      processEscapes: true,
+      processEnvironments: true
+    },
+
+    "HTML-CSS": {
+      preferredFont: "STIX",
+      styles: {
+        ".MathJax_Display": {
+          "background-color": "#F0F0D8",
+          padding: ".5em 0"
+        },
+        ".MathJax": {
+          color: "#541F14",
+        }
+      }
+    }
+  });
+<script src="http://cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML"></script>
+```
+
+3\. Dodać przykładowy post:
+
+```html
+---
+layout: post
+title:  "Welcome to MathJax!"
+date:   2013-06-24 16:16:16
+categories: jekyll kramdown latex math
+---
+
+## Welcome MathJax!
+
+TeX + MathJax examples:
+
+<blockquote>
+<p>
+  Finally, you are going to have to do more work to protect the
+  mathematics from the Markdown engine so that things like underscores
+  and backslashes don’t get processed by Markdown when they appear in
+  mathematics. That is a bit tricky, but without that, you will run into
+  lots of problems with your TeX code not getting processed properly.
+</p>
+<p class="source">— Davide Cervone</p>
+</blockquote>
+
+$$A = \left[\matrix{1&2&3\cr4&5&6\cr7&8&9\cr}\right]
+$$
+
+$$\{\underbrace{\overbrace{\mathstrut a,\ldots,a}^{k\;a'\rm s},
+  \overbrace{\mathstrut b,\ldots,b}^{l\;b'\rm s}\>}_{k+1\rm\;elements}\}
+$$
+
+$$\sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+x}}}}}}}
+$$
+
+$$\delta\colon {\Bbb R}^3 \to {\Bbb R}
+$$
+
+$$M = \pmatrix{\pmatrix{a&b\cr c&d} & \pmatrix{e&f\cr g&h}\cr
+  \bbox[#B2D1E5,1em]{0}&\pmatrix{i&j\cr k&l}}
+$$
+
+$$\sum_{i=1}^{n} i = \bbox[#86C543,0.25em]{n(n+1)\over2}
+$$
+
+$$n_1 + n^2_1 = 4
+$$
+
+$${(n_1+n_2+\cdots+n_m)!\over n_1!\,n_2!\ldots n_m!}
+  ={n_1+n_2\choose n_2}
+  \ldots{n_1+n_2+\cdots+n_m\choose n_m}
+$$
+
+Aby podejrzeć jak zostały wpisane wzory najeżdżamy myszką
+na wzór i klikamy go prawym przyciskiem.
+```
