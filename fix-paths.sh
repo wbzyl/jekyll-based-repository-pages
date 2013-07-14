@@ -4,6 +4,6 @@
 
 sed -i "
 s|href=\"{{ post.url }}\"|href=\"{{ site.baseurl }}{{ post.url }}\"|
-s|href=\"/css/syntax.css\"|href=\"{{ site.baseurl }}css/syntax.css\"|
-s|href=\"/css/main.css\"|href=\"{{ site.baseurl }}css/main.css\"|
+s|href=\"/css/syntax.css\"|href=\"{{ site.baseurl }}/css/syntax.css\"|
+s|href=\"/css/main.css\"|href=\"{{ site.baseurl }}/css/main.css\"|
 " "$@"

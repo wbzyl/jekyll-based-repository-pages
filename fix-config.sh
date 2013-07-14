@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# ./fix-config.sh /xxx/ 'My Awesome XXX Blog' blog/_config.yml
+# ./fix-config.sh /xxx 'My Awesome XXX Blog' blog/_config.yml
 
-repo_name=${1:-/}
+repo_name=${1:-}
 blog_name=${2:-My Awesome Blog}
 config_file=${3:-blog/_config.yml}
 
@@ -23,7 +23,7 @@ kramdown:\\
     coderay_css: class\\
 \\
 relative_permalinks: false\\
-permalink: /articles/:year-:month-:day-:title.html\\
+permalink: articles/:year-:month-:day-:title.html\\
 \\
 baseurl: ${repo_name}
 

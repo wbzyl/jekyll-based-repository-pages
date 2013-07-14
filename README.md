@@ -191,7 +191,7 @@ kramdown:\\
     coderay_css: class\\
 \\
 relative_permalinks: false\\
-permalink: /articles/:year-:month-:day-:title.html\\
+permalink: articles/:year-:month-:day-:title.html\\
 \\
 baseurl: ${repo_name}
 
@@ -202,7 +202,7 @@ baseurl: ${repo_name}
 Przykładowe wywołanie:
 
 ```sh
-./fix-config.sh /xxx/ 'My Awesome XXX Blog' blog/_config.yml
+./fix-config.sh /xxx 'My Awesome XXX Blog' blog/_config.yml
 ```
 
 #### *fix-paths.sh*
@@ -214,8 +214,8 @@ Korzystamy z programu *sed*:
 
 sed -i "
 s|href=\"{{ post.url }}\"|href=\"{{ site.baseurl }}{{ post.url }}\"|
-s|href=\"/css/syntax.css\"|href=\"{{ site.baseurl }}css/syntax.css\"|
-s|href=\"/css/main.css\"|href=\"{{ site.baseurl }}css/main.css\"|
+s|href=\"/css/syntax.css\"|href=\"{{ site.baseurl }}/css/syntax.css\"|
+s|href=\"/css/main.css\"|href=\"{{ site.baseurl }}/css/main.css\"|
 " "$@"
 ```
 
@@ -253,7 +253,7 @@ s|<html>|<html lang="pl">|
 s|content="width=device-width"|content="width=device-width,initial-scale=1"|
 s|<h1 class="title"><a href="/">|<h1 class="title"><a href="/">|
 s|<a class="extra" href="/">home|<a class="extra" href="http://tao.inf.ug.edu.pl">home
-s|href="http://github.com/yourusername/">github.com/yourusername|href="http://github.com/wbzyl/">github.com/wbzyl|
+s|href="http://github.com/yourusername/">github.com/yourusername|href="http://github.com/wbzyl/">github.com/wbzyl/|
 s|Your Name|Włodek Bzyl|
 
 s|br /|br|g
