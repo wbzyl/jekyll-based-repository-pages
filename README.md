@@ -370,13 +370,13 @@ Aby podejrzeć jak zostały wpisane wzory najeżdżamy myszką
 na wzór i klikamy go prawym przyciskiem.
 ```
 
-## TODO: Plugins
+### TODO: Plugins
 
 1. Dodać wtyczkę LESS
 2. Przepisać *css/main.css* na *css/main.less*.
 
 
-## TODO: Cutomization
+### TODO: Cutomization
 
 1. Stylizacja: większe litery, domyślny font itp.
 2. Wygenerować CSS dla Coderay i dodać do *_layouts/default.html*.
