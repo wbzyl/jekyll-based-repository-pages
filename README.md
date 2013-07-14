@@ -269,48 +269,49 @@ Przykładowe wywołanie:
 ./customize.sh blog/index.html blog/_layouts/default.html
 ```
 
-#### TODO: *mathjax.sh*
+#### *mathjax.sh*
 
-1\. Dodać `{% include mathjax.html %}` do layoutu (w skrypcie *customize.sh*).
+1\. Dodać `{% include mathjax.html %}` do layoutu.
 
 2\. Utworzyć katalog *_includes* i dodać do niego plik
 *mathjax.html* o takiej zawartości:
 
 ```html
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    displayAlign: "left",
-    displayIndent: "2em",
+MathJax.Hub.Config({
+  displayAlign: "left",
+  displayIndent: "2em",
 
-    TeX: {
-      extensions: ["color.js"],
-      Macros: {
-        MM: "{\bf M}",
-        bold: ["{\bf #1}",1]
-      }
-    },
+  TeX: {
+    extensions: ["color.js"],
+    Macros: {
+      MM: "{\bf M}",
+      bold: ["{\bf #1}",1]
+    }
+  },
 
-    tex2jax: {
-      inlineMath: [ ["$","$"] ],
-      displayMath: [ ["$$","$$"] ],
-      balanceBraces: true,
-      processEscapes: true,
-      processEnvironments: true
-    },
+  tex2jax: {
+    inlineMath: [ ["$","$"] ],
+    displayMath: [ ["$$","$$"] ],
+    balanceBraces: true,
+    processEscapes: true,
+    processEnvironments: true
+  },
 
-    "HTML-CSS": {
-      preferredFont: "STIX",
-      styles: {
-        ".MathJax_Display": {
-          "background-color": "#F0F0D8",
-          padding: ".5em 0"
-        },
-        ".MathJax": {
-          color: "#541F14",
-        }
+  "HTML-CSS": {
+    preferredFont: "STIX",
+    styles: {
+      ".MathJax_Display": {
+        "background-color": "#F0F0D8",
+        padding: ".5em 0"
+      },
+      ".MathJax": {
+        color: "#541F14",
       }
     }
-  });
+  }
+});
+<script>
 <script src="http://cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML"></script>
 ```
 
@@ -320,7 +321,7 @@ Przykładowe wywołanie:
 ---
 layout: post
 title:  "Welcome to MathJax!"
-date:   2013-06-24 16:16:16
+date:   2013-06-26 16:16:16
 categories: jekyll kramdown latex math
 ---
 
