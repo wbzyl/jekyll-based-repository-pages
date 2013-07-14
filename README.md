@@ -271,7 +271,7 @@ Przykładowe wywołanie:
 
 #### TODO: *mathjax.sh*
 
-1\. Dodać `{% include mathjax.html %}` do layoutu.
+1\. Dodać `{% include mathjax.html %}` do layoutu (w skrypcie *customize.sh*).
 
 2\. Utworzyć katalog *_includes* i dodać do niego plik
 *mathjax.html* o takiej zawartości:
@@ -370,3 +370,10 @@ $$
 Aby podejrzeć jak zostały wpisane wzory najeżdżamy myszką
 na wzór i klikamy go prawym przyciskiem.
 ```
+
+## TODO
+
+1. Dodać wtyczkę LESS.
+2. Przepisać CSS na LESS.
+3. Poprawić CSS (LESS) – większe litery, domyślny font.
+4. Wygenerować CSS dla Coderay i dodać do layoutu.
