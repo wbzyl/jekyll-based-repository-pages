@@ -5,8 +5,6 @@ date:   2013-06-26 16:16:16
 categories: jekyll kramdown latex math
 ---
 
-## Welcome MathJax!
-
 TeX + MathJax examples:
 
 <blockquote>
