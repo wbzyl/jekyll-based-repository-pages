@@ -373,6 +373,7 @@ na wzór i klikamy go prawym przyciskiem.
 
 ## TODO
 
+0. Bug: podwójny `//` w linku do postów.
 1. Dodać wtyczkę LESS.
 2. Przepisać CSS na LESS.
 3. Poprawić CSS (LESS) – większe litery, domyślny font.
