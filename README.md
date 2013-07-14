@@ -396,3 +396,6 @@ na wzór i klikamy go prawym przyciskiem.
 
 1. Stylizacja: większe litery, domyślny font itp.
 2. Wygenerować CSS dla Coderay i dodać do *_layouts/default.html*.
+
+
+## TODO: Instalacja szablonu na skróty
