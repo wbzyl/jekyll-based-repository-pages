@@ -202,7 +202,7 @@ baseurl: ${repo_name}
 Przykładowe wywołanie:
 
 ```sh
-./fix-config.sh 'XXX Blog' /xxx/ blog/_config.yml
+./fix-config.sh /xxx/ 'My Awesome XXX Blog' blog/_config.yml
 ```
 
 #### *fix-paths.sh*
@@ -212,22 +212,26 @@ Korzystamy z programu *sed*:
 ```sh
 #!/bin/bash
 
-name=${1:-blog/}
-name=${2:-blog/}
-
-sed -i '
-
-' "$@"
+sed "
+s|href=\"{{ post.url }}\"|href=\"{{ site.baseurl }}{{ post.url }}\"|
+s|href=\"/css/syntax.css\"|href=\"{{ site.baseurl }}css/syntax.css\"|
+s|href=\"/css/main.css\"|href=\"{{ site.baseurl }}css/main.css\"|
+" "$@"
 ```
 
-Przykładowe wywołanie:
+Wywołanie skryptu:
 
 ```sh
-./fix-paths.sh blog/index.html blog/default.html
+./fix-paths.sh blog/index.html blog/_layouts/default.html
 ```
 
+Po tych zmianach blog będzie dostępny lokalnie z takiego URL:
 
-#### TODO: *customize.sh*
+```
+http://localhost:4000/abc/  #<= z `/` na końcu
+```
+
+#### *customize.sh*
 
 Korzystamy z programu *sed*:
 

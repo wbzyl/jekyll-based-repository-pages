@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# ./fix-config.sh 'XXX Blog' /xxx/ blog/_config.yml
+# ./fix-config.sh /xxx/ 'My Awesome XXX Blog' blog/_config.yml
 
-blog_name=${1:-My Awesome Blog}
-repo_name=${2:-/}
+repo_name=${1:-/}
+blog_name=${2:-My Awesome Blog}
 config_file=${3:-blog/_config.yml}
 
-sed "
-/name/ c\\
-name=${blog_name}
+sed -i "
+/name:/ c\\
+name: ${blog_name}
 
 $ a\\
 \\
