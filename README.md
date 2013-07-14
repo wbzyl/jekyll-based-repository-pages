@@ -370,10 +370,13 @@ Aby podejrzeć jak zostały wpisane wzory najeżdżamy myszką
 na wzór i klikamy go prawym przyciskiem.
 ```
 
-## TODO
+## TODO: Plugins
 
-0. Bug: podwójny `//` w linku do postów.
-1. Dodać wtyczkę LESS.
-2. Przepisać CSS na LESS.
-3. Poprawić CSS (LESS) – większe litery, domyślny font.
-4. Wygenerować CSS dla Coderay i dodać do layoutu.
+1. Dodać wtyczkę LESS
+2. Przepisać *css/main.css* na *css/main.less*.
+
+
+## TODO: Cutomization
+
+1. Stylizacja: większe litery, domyślny font itp.
+2. Wygenerować CSS dla Coderay i dodać do *_layouts/default.html*.
