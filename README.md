@@ -567,16 +567,13 @@ ul.posts {
 Zaczynamy od kolorowania składni. Jeśli korzystamy z gemu Kramdown, to
 blok kodu (w języku Ruby) wstawiamy w taki sposób:
 
-```
-~~~ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-&#7E;&#7E;&#7E;
-~~~
-~~~
+    ~~~ruby
+    def print_hi(name)
+      puts "Hi, #{name}"
+    end
+    print_hi('Tom')
+    #=> prints 'Hi, Tom' to STDOUT.
+    ~~~
 
 Musimy jeszcze wygenerować arkusz CSS i dodać go do
 katalogu *css*:
