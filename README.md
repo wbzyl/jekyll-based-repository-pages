@@ -582,7 +582,19 @@ katalogu *css*:
 coderay stylesheet > css/syntax.css
 ```
 
-2. Stylizacja: większe litery, domyślny font itp.
+Pozostałe rzeczy do poprawy/wymiany:
+
+1. Litery są za małe (18px minimum)
+   Szerokość kolumny tekstu powinna zawierać 60-70 znaków.
+   Ile to będzie jednostek em? ile px?
+   Kolumnę dosunąć do lewego marginesu
+   i dodać *left-margin* 40px.
+2. Domyślny font to Helvetica/Arial. Są to fonty MS.
+   Wymienić na jakiś open source font.
+3. Dodać element *blockquote* do cytatów.
+
+Dodać jeszcze jeden arkusz CSS(LESS), *custom.less*,
+nadpisujący ustawienia domyślne.
 
 
 ## TODO: Instalacja szablonu na skróty
