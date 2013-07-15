@@ -386,13 +386,63 @@ Aby podejrzeć jak zostały wpisane wzory najeżdżamy myszką
 na wzór i klikamy go prawym przyciskiem.
 ```
 
-### TODO: Plugins
+### Plugins: less→css converter
 
-1. Dodać wtyczkę LESS
-2. Przepisać *css/main.css* na *css/main.less*.
+Tworzymy katalog *_plugins* i dodajemy do niego plik
+*less_converter.rb* o zawartości:
+
+```ruby
+module Jekyll
+  class LessConverter < Converter
+    safe true
+    priority :high
+
+    def setup
+      return if @setup
+      require 'less'
+      @setup = true
+    rescue LoadError
+      STDERR.puts 'You are missing the library required for less. Please run:'
+      STDERR.puts ' $ [sudo] gem install less'
+      raise FatalException.new("Missing dependency: less")
+    end
+
+    def matches(ext)
+      ext =~ /.less/i
+    end
+
+    def output_ext(ext)
+      ".css"
+    end
+
+    def convert(content)
+      setup
+      begin
+        parser = Less::Parser.new
+        parser = parser.parse(content).to_css
+      rescue => e
+        puts "Less Exception: #{e.message}"
+      end
+    end
+
+  end
+end
+```
+
+Następnie zmieniamy nazwę pliku *css/main.css* na
+*css/main.less* i przepisujemy kod CSS na LESS. Oto wynik konwersji
+z wymaganym nagłówkiem YAML:
+
+```less
+---
+title: main CSS
+---
+
+```
 
 
-### TODO: Cutomization
+
+### TODO: CSS customization
 
 1. Stylizacja: większe litery, domyślny font itp.
 2. Wygenerować CSS dla Coderay i dodać do *_layouts/default.html*.
