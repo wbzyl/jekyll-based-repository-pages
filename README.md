@@ -433,45 +433,36 @@ Następnie zmieniamy nazwę pliku *css/main.css* na
 *css/main.less* i przepisujemy kod CSS na LESS. Oto wynik konwersji
 z wymaganym nagłówkiem YAML:
 
-```less
+```css
 ---
 title: main CSS
 ---
-
 // Common
-
 * {
   margin: 0;
   padding: 0;
 }
-
 html, body { height: 100%; }
-
 body {
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
-
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
-
 a { color: #00a;
   &:hover   { color: #000; }
   &:visited { color: #a0a; }
 }
-
 table {
   font-size: inherit;
   font: 100%;
 }
 
 // Home
-
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;
@@ -486,15 +477,12 @@ ul.posts {
 }
 
 // Site
-
 .site {
-
   font-size: 115%;
   text-align: justify;
   width: 42em;
   margin: 3em auto 2em;
   line-height: 1.5em;
-
   .header {
     a {
       font-weight: bold;
@@ -518,11 +506,9 @@ ul.posts {
       }
     }
   }
-
   .meta {
     color: #aaa;
   }
-
   .footer {
     font-size: 80%;
     color: #666;
@@ -545,13 +531,10 @@ ul.posts {
       border: 0;
     }
   }
-
 }
 
 // Posts
-
 .post {
-
   pre {
     border: 1px solid #ddd;
     background-color: #eef;
@@ -568,17 +551,14 @@ ul.posts {
       }
     }
   }
-
   ul, ol {
     margin-left: 1.35em;
   }
-
   code {
     border: 1px solid #ddd;
     background-color: #eef;
     padding: 0 .2em;
   }
-
 }
 ```
 
