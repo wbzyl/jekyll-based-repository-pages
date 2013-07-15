@@ -564,9 +564,8 @@ ul.posts {
 
 ### CSS customization
 
-Zaczynamy od podkolorwywania składni.
-
-W Kramdown blok kodu (tutaj w Ruby) wstawiamy w taki sposób:
+Zaczynamy od kolorowania składni. Jeśli korzystamy z gemu Kramdown, to
+blok kodu (w języku Ruby) wstawiamy w taki sposób:
 
 ```
 ~~~ruby
@@ -575,7 +574,7 @@ def print_hi(name)
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
-~~~
+&#7E;&#7E;&#7E;
 ```
 
 Musimy jeszcze wygenerować arkusz CSS i dodać go do
