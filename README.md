@@ -386,7 +386,7 @@ Aby podejrzeć jak zostały wpisane wzory najeżdżamy myszką
 na wzór i klikamy go prawym przyciskiem.
 ```
 
-### Plugins: less→css converter
+### Plugins: LESS→CSS converter
 
 Tworzymy katalog *_plugins* i dodajemy do niego plik
 *less_converter.rb* o zawartości:
