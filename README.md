@@ -575,7 +575,8 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 &#7E;&#7E;&#7E;
-```
+~~~
+~~~
 
 Musimy jeszcze wygenerować arkusz CSS i dodać go do
 katalogu *css*:
