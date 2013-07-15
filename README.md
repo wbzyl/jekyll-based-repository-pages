@@ -564,7 +564,26 @@ ul.posts {
 
 ### CSS customization
 
-1. Wygenerować CSS dla Coderay i dodać do *_layouts/default.html*.
+Zaczynamy od podkolorwywania składni.
+
+W Kramdown blok kodu (tutaj w Ruby) wstawiamy w taki sposób:
+
+```
+~~~ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+~~~
+```
+
+Musimy jeszcze wygenerować arkusz CSS i dodać go do
+katalogu *css*:
+
+```sh
+coderay stylesheet > css/syntax.css
+```
 
 2. Stylizacja: większe litery, domyślny font itp.
 
