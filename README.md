@@ -599,11 +599,13 @@ title: custom CSS
 ---
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font: 16px/1.6 Helvetica, Arial, sans-serif;
 }
 .site {
   font-size: 100%;
   text-align: left;
+  width: 42em;
+  margin: 3em auto 2em 2em;
 }
 ```
 
