@@ -211,11 +211,11 @@ Korzystamy z programu *sed*:
 
 ```sh
 #!/bin/bash
-
 sed -i "
 s|href=\"{{ post.url }}\"|href=\"{{ site.baseurl }}{{ post.url }}\"|
 s|href=\"/css/syntax.css\"|href=\"{{ site.baseurl }}/css/syntax.css\"|
-s|href=\"/css/main.css\"|href=\"{{ site.baseurl }}/css/main.css\"|
+s|href=\"/css/main.css\"|href=\"{{ site.baseurl }}/css/main.css\"\
+        <link rel=\"stylesheet\" href=\"{{ site.baseurl }}/css/custom.css\">|
 " "$@"
 ```
 
@@ -584,17 +584,26 @@ coderay stylesheet > css/syntax.css
 
 Pozostałe rzeczy do poprawy/wymiany:
 
-1. Litery są za małe (18px minimum)
+1\. Litery są za małe (16px minimum)
    Szerokość kolumny tekstu powinna zawierać 60-70 znaków.
    Ile to będzie jednostek em? ile px?
    Kolumnę dosunąć do lewego marginesu
-   i dodać *left-margin* 40px.
-2. Domyślny font to Helvetica/Arial. Są to fonty MS.
+   i dodać *left-margin* 40px.<br>
+   Domyślny font to Helvetica/Arial. Są to fonty MS.
    Wymienić na jakiś open source font.
-3. Dodać element *blockquote* do cytatów.
 
-Dodać jeszcze jeden arkusz CSS(LESS), *custom.less*,
-nadpisujący ustawienia domyślne.
+
+```css
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.site {
+  font-size: 100%;
+  text-align: left;
+}
+```
+
+2\. Dodać element *blockquote* do cytatów.
 
 
 ## TODO: Instalacja szablonu na skróty
