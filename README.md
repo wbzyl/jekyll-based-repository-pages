@@ -445,8 +445,7 @@ title: main CSS
 html, body { height: 100%; }
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
+  font-family: Helvetica, Arial, sans-serif;
   text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -456,10 +455,6 @@ p { margin: 1em 0; }
 a { color: #00a;
   &:hover   { color: #000; }
   &:visited { color: #a0a; }
-}
-table {
-  font-size: inherit;
-  font: 100%;
 }
 
 // Home
@@ -478,7 +473,6 @@ ul.posts {
 
 // Site
 .site {
-  font-size: 115%;
   text-align: justify;
   width: 42em;
   margin: 3em auto 2em;
@@ -599,14 +593,23 @@ title: custom CSS
 ---
 
 body {
-  font: 16px/1.6 DejaVu Sans, Helvetica, Arial, sans-serif;
+  font: 18px/1.6 DejaVu Sans, Helvetica, Arial, sans-serif;
 }
+
 .site {
-  font-size: 100%;
+  position: relative;
   text-align: left;
-  width: 42em;
-  margin: 3em auto 2em 2em;
+  width: 660px;  // 42em
+  margin: 40px auto 40px 40px;
 }
+
+.post {
+  pre {
+    border: 0;
+    padding: 0.5em 1em;
+  }
+}
+
 ul.posts {
   span {
     color: #aaa;
@@ -614,8 +617,30 @@ ul.posts {
     font-size: 80%;
   }
 }
+
 .CodeRay {
+  border: 0;
   font-family: "DejaVu Sans Mono", monospace;
+}
+
+blockquote {
+  position: absolute;
+  left: 100%;
+  margin-left: 20px;
+  border: 1px solid #ddd;
+  width: 300px;
+  padding: 0 20px;
+  font: 14px/1.7 "DejaVu Serif", serif;
+  .author {
+    text-align: right;
+    padding-right: 2em;
+    font-style: italic;
+  }
+  img {
+    display: block;
+    max-width: 300px;
+    margin: 0.5em auto 1em auto;
+  }
 }
 ```
 
