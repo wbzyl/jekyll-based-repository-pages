@@ -653,5 +653,16 @@ Skrypt „na skróty” (ang. *shortcuts*):
 
 1. remote add this repo
 2. read-tree z remote
-3. create bare gh-pages repo
-4. read-tree once more
+
+Sprawdzamy, czy działa:
+
+```sh
+cd blog
+jekyll serve -b /abc --watch  # http://localhost:4000/abc/
+```
+
+1. create bare gh-pages repo
+2. read-tree once more
+3. push branch to git repo
+
+Sprawdzamy, czy to działa:
