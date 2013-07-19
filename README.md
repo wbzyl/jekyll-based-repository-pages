@@ -662,11 +662,13 @@ jekyll serve -b /abc --watch  # http://localhost:4000/abc/
 ```
 
 1. create bare gh-pages repo
-2. read-tree once more
-3. push branch to git repo
+2. read-tree to gh-pages once more
+3. push gh-pages branch to git repo
 
 Sprawdzamy, czy to działa:
 
     http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
 
 1. edytujemy skrypt *customize.sh* i uruchamiamy go.
+2. read-tree changes to gh-pages
+3. push gh-pages branch to git repo
