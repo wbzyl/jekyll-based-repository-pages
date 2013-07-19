@@ -649,7 +649,7 @@ blockquote {
 **TODO:** Dodać do *customize.sh*  ustawienie zmiennej *baseurl*.
 Zmieniony skrypt przenieść do katalogu *blog*.
 
-Na skróty:
+Skrypt „na skróty” (ang. *shortcuts*):
 
 1. remote add this repo
 2. read-tree z remote
