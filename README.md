@@ -666,3 +666,7 @@ jekyll serve -b /abc --watch  # http://localhost:4000/abc/
 3. push branch to git repo
 
 Sprawdzamy, czy to działa:
+
+    http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
+
+1. edytujemy skrypt *customize.sh* i uruchamiamy go.
