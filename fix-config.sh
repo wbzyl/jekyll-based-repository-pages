@@ -2,7 +2,7 @@
 
 # ./fix-config.sh /xxx 'My Awesome XXX Blog' blog/_config.yml
 
-repo_name=${1:-}
+git_repo_name=${1:-}
 blog_name=${2:-My Awesome Blog}
 config_file=${3:-blog/_config.yml}
 
@@ -25,7 +25,7 @@ kramdown:\\
 relative_permalinks: false\\
 permalink: articles/:year-:month-:day-:title.html\\
 \\
-baseurl: ${repo_name}
+baseurl: ${git_repo_name}
 
 /pygments: true/ d
 " $config_file

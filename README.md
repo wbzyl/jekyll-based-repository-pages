@@ -170,7 +170,7 @@ Korzystamy z programu *sed*:
 ```sh
 #!/bin/bash
 
-repo_name=${1:-}
+git_repo_name=${1:-}
 blog_name=${2:-My Awesome Blog}
 config_file=${3:-blog/_config.yml}
 
@@ -193,7 +193,7 @@ kramdown:\\
 relative_permalinks: false\\
 permalink: articles/:year-:month-:day-:title.html\\
 \\
-baseurl: ${repo_name}
+baseurl: ${git_repo_name}
 
 /pygments: true/ d
 " $config_file
@@ -646,3 +646,5 @@ blockquote {
 ```
 
 ## TODO: Instalacja szablonu na skróty
+
+1. Po *fix-paths.sh*.
