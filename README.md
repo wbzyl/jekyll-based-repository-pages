@@ -171,7 +171,7 @@ Korzystamy z programu *sed*:
 #!/bin/bash
 
 git_repo_name=${1:-}
-blog_name=${2:-My Awesome Blog}
+blog_name=${2:-Your New Jekyll Site}
 config_file=${3:-blog/_config.yml}
 
 sed -i "
