@@ -623,6 +623,7 @@ ul.posts {
   font-family: "DejaVu Sans Mono", monospace;
 }
 
+// quotes
 blockquote {
   position: absolute;
   left: 100%;
@@ -643,8 +644,5 @@ blockquote {
   }
 }
 ```
-
-2\. Dodać element *blockquote* do cytatów.
-
 
 ## TODO: Instalacja szablonu na skróty

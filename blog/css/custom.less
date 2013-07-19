@@ -5,6 +5,7 @@ title: custom CSS
 body {
   font: 18px/1.6 DejaVu Sans, Helvetica, Arial, sans-serif;
 }
+
 .site {
   font-size: 100%;
   text-align: left;
@@ -22,4 +23,24 @@ ul.posts {
 
 .CodeRay {
   font-family: "DejaVu Sans Mono", monospace;
+}
+
+blockquote {
+  position: absolute;
+  left: 100%;
+  margin-left: 20px;
+  border: 1px solid #ddd;
+  width: 300px;
+  padding: 0 20px;
+  font: 14px/1.7 "DejaVu Serif", serif;
+  .author {
+    text-align: right;
+    padding-right: 2em;
+    font-style: italic;
+  }
+  img {
+    display: block;
+    max-width: 300px;
+    margin: 0.5em auto 1em auto;
+  }
 }
