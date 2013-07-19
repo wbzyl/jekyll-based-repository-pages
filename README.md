@@ -644,6 +644,14 @@ blockquote {
 }
 ```
 
-## TODO: Instalacja szablonu na skróty
+## Instalacja szablonu na skróty
 
-1. Po *fix-paths.sh*.
+**TODO:** Dodać do *customize.sh*  ustawienie zmiennej *baseurl*.
+Zmieniony skrypt przenieść do katalogu *blog*.
+
+Na skróty:
+
+1. remote add this repo
+2. read-tree z remote
+3. create bare gh-pages repo
+4. read-tree once more
