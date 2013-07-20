@@ -61,7 +61,7 @@ $$
 $$\sum_{i=1}^{n} i = \bbox[#86C543,0.25em]{n(n+1)\over2}
 $$
 
-$$n_1 + n^2_1 = 4
+$$a^2 + b^2 = c^2
 $$
 
 $${(n_1+n_2+\cdots+n_m)!\over n_1!\,n_2!\ldots n_m!}
