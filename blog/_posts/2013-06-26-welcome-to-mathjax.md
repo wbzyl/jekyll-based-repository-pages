@@ -66,7 +66,7 @@ $$
 
 $${(n_1+n_2+\cdots+n_m)!\over n_1!\,n_2!\ldots n_m!}
   ={n_1+n_2\choose n_2}
-  \ldots{n_1+n_2+\cdots+n_m\choose n_m}
+  \ldots{n_1+\cdots+n_m\choose n_m}
 $$
 
 Aby podejrzeć jak zostały wpisane wzory najeżdżamy myszką
