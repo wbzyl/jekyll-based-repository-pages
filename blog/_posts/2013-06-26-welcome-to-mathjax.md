@@ -5,7 +5,7 @@ date:   2013-06-26 16:16:16
 categories: jekyll kramdown latex math
 ---
 
-TeX + MathJax examples:
+TeX + MathJax examples.
 
 <blockquote>
 <p>
@@ -17,6 +17,17 @@ TeX + MathJax examples:
 </p>
 <p class="source">— Davide Cervone</p>
 </blockquote>
+
+*Inline Math.*
+
+Let $\alpha$ be the fifth root of unity.
+We then want to evaluate the expression
+$\log|1+\alpha+\alpha^2+\alpha^3−1/\alpha|$.
+
+If $p=\frac{4\sinθ\cosθ}{\sinθ+\cosθ}$, find the value of
+$\frac{p+2\sinθ}{p−2\sinθ} + \frac{p+2\cosθ}{p−2\cosθ}$.
+
+*Display Math.*
 
 $$A = \left[\matrix{1&2&3\cr4&5&6\cr7&8&9\cr}\right]
 $$
