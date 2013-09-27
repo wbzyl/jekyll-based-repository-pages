@@ -37,12 +37,11 @@ w `Settings` → `Automatic Page Generator` → `Continue to Layouts` → `Publ
 ![Hide Edit Publish](/images/gh-pages-4.png)
 
 Następnie, jeśli tego nie zrobiliśmy wcześniej, klonujemy repozytorium.
-
-Zaczynamy od kliknięcia w tabliczkę ze strzałką:
+Klikamy w tabliczkę ze strzałką:
 
 ![SSH clone URL](/images/gh-pages-5.png)
 
-wpisujemy `git clone ` na konsoli, wciskamy
+Na konsoli wpisujemy `git clone `, wciskamy
 klawisze SHIFT+CTRL+V i wykonujemy polecenie wciskając klawisz Enter.
 
 Na koniec, z katalogu z repozytorium, wchodzimy na nowo utworzoną
