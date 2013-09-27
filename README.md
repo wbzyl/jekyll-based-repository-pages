@@ -60,7 +60,7 @@ git checkout --orphan gh-pages # create branch, without any parents
  
 
 
-Po założeniu gałęzi *gh-pages* usuwamy niepotrzbne pliki:
+Po założeniu gałęzi *gh-pages* usuwamy niepotrzebne pliki:
 
 ```sh
 git rm -rf .                   # remove all files from the old working tree
