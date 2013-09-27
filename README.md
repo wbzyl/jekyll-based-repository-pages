@@ -48,7 +48,8 @@ Na koniec, z katalogu z repozytorium, wchodzimy na nowo utworzoną
 gałąź *gh-pages*:
 
 ```sh
-git checkout gh-pages
+git pull
+git checkout --track origin/gh-pages
 ```
 
 2\. [Manualnie](https://help.github.com/articles/creating-project-pages-manually):
