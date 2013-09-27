@@ -76,6 +76,13 @@ git commit -m "add sample page index,html"
 git push origin gh-pages
 ```
 
+Jeśli wszystkie te polecenia wykonały się bez błędów, to
+wracamy na gałąź ***master**:
+
+```sh
+git checkout master
+```
+
 Po chwili sprawdzamy, czy strona *index.html* jest dostępna.
 
 
@@ -180,7 +187,7 @@ Wchodzimy na stronę
  http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
 ```
 
-i widzimy, że *jekyll* wygenerował nipoprawne ścieżki do plików CSS:
+i widzimy, że *jekyll* wygenerował niepoprawne ścieżki do plików CSS:
 
 ----
 ![jekyll index page](/images/index-gh-page.png)
