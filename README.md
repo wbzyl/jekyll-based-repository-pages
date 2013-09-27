@@ -148,7 +148,7 @@ program *jekyll*
 (a wygenerowane strony są serwowane przez serwer GitHub),
 to my **nie będziemy** korzystać z tego mechanizmu.
 Dlaczego? Ponieważ wersje gemów użytych przez GitHub i przez nas mogą
-być różne; dodatkowo kolorowanie składni w Kramdown nie działa
+być różne. I najważniejsze – kolorowanie składni w Kramdown nie działa
 na serwerze GitHub.
 
 Program *jekyll* generowane strony zapisuje w katalogu *\_sites*.
