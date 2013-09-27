@@ -30,6 +30,11 @@ kilku poleceń na konsoli.
 
 1\. Klikanie.
 
+![1](/images/gh-pages-1.png)
+![2](/images/gh-pages-2.png)
+![3](/images/gh-pages-3.png)
+![4](/images/gh-pages-4.png)
+![5](/images/gh-pages-5.png)
 
 2\. [Manualny](https://help.github.com/articles/creating-project-pages-manually):
 
