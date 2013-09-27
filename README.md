@@ -28,22 +28,43 @@ Pierwszy sposób polega na przeklikaniu kawałka
 interfejsu repozytorium. Drugi, manualny, to wpisanie
 kilku poleceń na konsoli.
 
-1\. Klikanie.
+1\. Klikamy kolejno
+w `Settings` → `Automatic Page Generator` → `Continue to Layouts` → `Publish`
 
-![1](/images/gh-pages-1.png)
-![2](/images/gh-pages-2.png)
-![3](/images/gh-pages-3.png)
-![4](/images/gh-pages-4.png)
-![5](/images/gh-pages-5.png)
+![Settings](/images/gh-pages-1.png)  
+![Automatic Page Generator](/images/gh-pages-2.png)  
+![Continue to Layouts](/images/gh-pages-3.png)  
+![Hide Edit Publish](/images/gh-pages-4.png)
 
-2\. [Manualny](https://help.github.com/articles/creating-project-pages-manually):
+Następnie, jeśli tego nie zrobiliśmy wcześniej, klonujemy repozytorium.
+
+Zaczynamy od kliknięcia w tabliczkę ze strzałką:
+
+![SSH clone URL](/images/gh-pages-5.png)
+
+wpisujemy `git clone ` na konsoli, wciskamy
+klawisze SHIFT+CTRL+V i wykonujemy polecenie wciskając klawisz Enter.
+
+Na koniec, z katalogu z repozytorium, wchodzimy na nowo utworzoną
+gałąź *gh-pages*:
+
+```sh
+git checkout gh-pages
+```
+
+2\. [Manualnie](https://help.github.com/articles/creating-project-pages-manually):
 
 ```sh
 git checkout --orphan gh-pages # create branch, without any parents
+```
+
+Po założeniu gałęzi *gh-pages* usuwamy niepotrzbne pliki:
+
+```sh
 git rm -rf .                   # remove all files from the old working tree
 ```
 
-Dopiero teraz dodajemy do katalogu roboczego i repozytorium plik
+i dodajemy do katalogu roboczego i repozytorium plik
 *index.html*, oraz wykonujemy commit i push na GitHub:
 
 ```sh
@@ -52,7 +73,7 @@ git commit -m "add sample page index,html"
 git push origin gh-pages
 ```
 
-Po chwili sprawdzić, czy strona *index.html* jest dostępna.
+Po chwili sprawdzamy, czy strona *index.html* jest dostępna.
 
 
 ## Blogging with Jekyll
