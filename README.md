@@ -77,7 +77,7 @@ git push origin gh-pages
 ```
 
 Jeśli wszystkie te polecenia wykonały się bez błędów, to
-wracamy na gałąź ***master**:
+wracamy na gałąź ***master***:
 
 ```sh
 git checkout master
