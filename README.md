@@ -73,7 +73,8 @@ i dodajemy do katalogu roboczego i repozytorium plik
 ```sh
 git add index.html
 git commit -m "add sample page index,html"
-git push origin gh-pages
+git push origin           # sposób „klikanie”
+git push origin gh-pages  # sposób „manualny”
 ```
 
 Jeśli wszystkie te polecenia wykonały się bez błędów, to
