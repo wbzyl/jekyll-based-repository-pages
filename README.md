@@ -445,7 +445,10 @@ Aby podejrzeć jak zostały wpisane wzory najeżdżamy myszką
 na wzór i klikamy go prawym przyciskiem.
 ```
 
-### Plugins: LESS→CSS converter
+Teraz powinniśmy przejrzeć post z matematyką.
+
+
+### Plugins: LESS → CSS converter
 
 Tworzymy katalog *_plugins* i dodajemy do niego plik
 *less_converter.rb* o zawartości:
