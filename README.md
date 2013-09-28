@@ -656,7 +656,7 @@ i dodać *left-margin* 40px.<br>
 Domyślny font to Helvetica/Arial. Są to fonty MS.
 Wymienić na jakiś open source font.
 
-Dodatkowe reguły CSS zapisujemy w plikuu *custom.css*:
+Dodatkowe reguły CSS zapisujemy w plikuu *custom.less*:
 
 
 ```css
@@ -717,7 +717,7 @@ blockquote {
 }
 ```
 
-## Instalacja szablonu na skróty
+## Instalacja na skróty
 
 **TODO:** Dodać do *customize.sh*  ustawienie zmiennej *baseurl*.
 Zmieniony skrypt przenieść do katalogu *blog*.
@@ -727,7 +727,7 @@ Skrypt „na skróty” (ang. *shortcuts*):
 1. remote add this repo
 2. read-tree z remote
 
-Sprawdzamy, czy działa:
+Sprawdzamy, czy wszystko działa:
 
 ```sh
 cd blog
