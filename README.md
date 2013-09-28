@@ -159,30 +159,31 @@ być różne.
 z gemem Kramdown, a kolorowanie składni z Kramdown nie działa na
 serwerze GitHub.
 
-<p style="color:red;text-align:center">✦✦✦</p>
+✦✦✦
 
 Program *jekyll* generowane strony zapisuje w katalogu *\_sites*.
-Dodamy ten katalog do repozytorium.
-
-W tym celu usuwamy linijkę zawierającą
-*_site* z pliku *.gitignore* i wykonujemy:
+Dodamy ten katalog do repozytorium. W tym celu usuwamy linijkę
+zawierającą *_site* z plików *.gitignore* (lub usuwamy wszystkie te
+pliki) i wykonujemy:
 
 ```sh
 git add _site/
 git commit -m "dodano katalog _site do repo"
 ```
 
-Dodajemy pusty plik *.nojekyll*, który informuje serwer
-GitHub, aby nie uruchamiał automatycznie programu *jekyll*:
+Do katalogu *blog* dodajemy pusty plik *.nojekyll*, który informuje
+serwer GitHub, aby nie uruchamiał automatycznie programu *jekyll*:
 
 ```sh
+cd blog
 touch _site/.nojekyll
 git add _site/.nojekyll
 git commit -m "dodano plik .nojekyll do katalogu _site"
+git push
+cd ..
 ```
 
-**Dopiero teraz przenosimy zawartość katalogu *_site* na gałąź
-*gh-pages*.**
+**Dopiero teraz przenosimy zawartość katalogu *_site* na gałąź *gh-pages*.**
 
 ```sh
 git checkout gh-pages
