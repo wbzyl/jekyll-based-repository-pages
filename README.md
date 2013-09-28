@@ -450,10 +450,18 @@ Teraz powinniśmy przejrzeć post z matematyką.
 
 ### Plugins: LESS → CSS converter
 
-Tworzymy katalog *_plugins* i dodajemy do niego plik
-*less_converter.rb* o zawartości:
+Najpierw zainstalujemy potrzebne gemy:
+
+```sh
+gem install less
+gem install therubyracer
+```
+
+Tworzymy katalog *_plugins* i dodajemy do niego plik *less_converter.rb* o zawartości:
 
 ```ruby
+require 'less'
+
 module Jekyll
   class LessConverter < Converter
     safe true
@@ -641,12 +649,14 @@ coderay stylesheet > css/syntax.css
 Pozostałe rzeczy do poprawy/wymiany:
 
 1\. Litery są za małe (16px minimum)
-   Szerokość kolumny tekstu powinna zawierać 60-70 znaków.
-   Ile to będzie jednostek em? ile px?
-   Kolumnę dosunąć do lewego marginesu
-   i dodać *left-margin* 40px.<br>
-   Domyślny font to Helvetica/Arial. Są to fonty MS.
-   Wymienić na jakiś open source font.
+Szerokość kolumny tekstu powinna zawierać 60-70 znaków.
+Ile to będzie jednostek em? ile px?
+Kolumnę dosunąć do lewego marginesu
+i dodać *left-margin* 40px.<br>
+Domyślny font to Helvetica/Arial. Są to fonty MS.
+Wymienić na jakiś open source font.
+
+Dodatkowe reguły CSS zapisujemy w plikuu *custom.css*:
 
 
 ```css
