@@ -159,7 +159,7 @@ być różne.
 z gemem Kramdown, a kolorowanie składni z Kramdown nie działa na
 serwerze GitHub.
 
-<p style="text-align:center">✦✦✦</p>
+<p style="color:red;text-align:center">✦✦✦</p>
 
 Program *jekyll* generowane strony zapisuje w katalogu *\_sites*.
 Dodamy ten katalog do repozytorium.
