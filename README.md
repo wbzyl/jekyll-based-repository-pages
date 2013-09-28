@@ -327,7 +327,10 @@ Przykładowe wywołanie:
 
 #### *mathjax.sh*
 
-1\. Dopisać `{% include mathjax.html %}` do pliku *_layouts/default.html*.
+Wykonamy w trzech krokach.
+
+1\. Skorzystamy ze skryptu poniżej, aby dopisać
+`{% include mathjax.html %}` do pliku *_layouts/default.html*.
 
 ```sh
 #!/bin/bash
@@ -339,14 +342,14 @@ s|^<!DOCTYPE html>$|<!doctype html>|
 ' "$@"
 ```
 
-Uruchomić powyższy skrypt:
+Uruchomić powyższy skrypt z katalogu głównego repozytorium:
 
 ```sh
 ./mathjax.sh blog/_layouts/default.html
 ```
 
-2\. Utworzyć katalog *_includes* i dodać do niego plik
-*mathjax.html* o takiej zawartości:
+2\. W katalogu głównym repozytorium utworzyć katalog *_includes*
+i dodać do niego plik *mathjax.html* o takiej zawartości:
 
 ```html
 <script type="text/x-mathjax-config">
@@ -383,11 +386,11 @@ MathJax.Hub.Config({
     }
   }
 });
-<script>
+</script>
 <script src="http://cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML"></script>
 ```
 
-3\. Dodać przykładowy post:
+3\. Dodać przykładowy post do katalogu *_posts*:
 
 ```html
 ---
