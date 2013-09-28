@@ -190,6 +190,7 @@ git checkout gh-pages
 git read-tree -m -u master:blog/_site/
 git commit -m 'copy content of blog/ from master to gh-pages'
 git push origin gh-pages
+# albo: git push
 git checkout master
 ```
 Wchodzimy na stronę
@@ -253,7 +254,7 @@ baseurl: ${git_repo_name}
 " $config_file
 ```
 
-Przykładowe wywołanie:
+Przykładowe wywołanie z katalogu głównego repozytorium:
 
 ```sh
 ./fix-config.sh /xxx 'Your New Jekyll Site' blog/_config.yml
@@ -261,7 +262,7 @@ Przykładowe wywołanie:
 
 #### *fix-paths.sh*
 
-Korzystamy z programu *sed*:
+Ponownie korzystamy z programu *sed*:
 
 ```sh
 #!/bin/bash
@@ -279,9 +280,10 @@ Wywołanie skryptu:
 ./fix-paths.sh blog/index.html blog/_layouts/default.html
 ```
 
-Po tych zmianach i uruchomieniu serwera:
+Po tych zmianach i uruchomieniu serwera z katalogu *blog*:
 
 ```sh
+cd blog
 jekyll serve --watch
 ```
 
@@ -291,7 +293,8 @@ blog będzie dostępny lokalnie z takiego URL:
 http://localhost:4000/〈baseurl〉/  #<= z ukośnikiem `/` na końcu url
 ```
 
-gdzie *baseurl* dodał do pliku *_config.yml* poprzedni skrypt.
+gdzie *baseurl* zostało dopisane do pliku *_config.yml* przez
+poprzedni skrypt.
 
 
 #### *customize.sh*
