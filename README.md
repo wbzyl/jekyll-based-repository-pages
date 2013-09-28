@@ -73,8 +73,8 @@ i dodajemy do katalogu roboczego i repozytorium plik
 ```sh
 git add index.html
 git commit -m "add sample page index,html"
-git push origin           # sposób „klikanie”
-git push origin gh-pages  # sposób „manualny”
+git push origin           # dla sposobu „klikanie”
+git push origin gh-pages  # dla sposobu „manualny”
 ```
 
 Jeśli wszystkie te polecenia wykonały się bez błędów, to
@@ -111,35 +111,37 @@ gem install kramdown  # Markdown + LaTeX + kolorowanie składni przez coderay
 ```
 
 Następnie generujemy szablon bloga w katalogu *blog*
-i dodajemy wygenerowane pliki do repozytorium:
+i dodajemy wygenerowane pliki do repozytorium. Polecenia
+wykonujemy w katalogu głównym repozytorium:
 
 ```sh
-jekyll new blog
+jekyll new blog                                # generujemy szablon
 git add blog
 git commit -m "add generated jekyll template"
 ```
 
-Teraz z wygenerowanych szablonów generujemy strony HTML:
+Z wygenerowanych szablonów generujemy „statyczne” strony HTML:
 
 ```sh
 cd blog
 jekyll build
 ```
 
-i uruchamiamy wbudowany server WWW:
+Sprawdzamy co się wygenerowało uruchamiając wbudowany server WWW:
 
 ```sh
 jekyll serve --watch
 ```
 
-Oglądamy wygenerowane strony tutaj *http://localhost:4000*
-i widzimy, że musimy poprawić kilka rzeczy:
+i oglądając wygenerowane strony w przeglądarce *http://localhost:4000*.
+
+Widzimy, że jest kilka rzeczy do poprawy.
 
 ----
 ![jekyll index page](/images/index-page.png)
 
-Na przykład: wpisać swoją nazwę bloga i swoje dane.
-Ale tymi poprawkami zajmiemy się później.
+Przykładowo, należy wpisać swoją nazwę bloga i swoje dane.
+Ala poprawkami zajmiemy się później.
 
 
 ## GitHub Pages
