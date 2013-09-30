@@ -730,6 +730,13 @@ git read-tree --prefix=blog/ -u temp/master:blog
 git remote rm temp
 ```
 
+Zmieniamy za pomocą skryptu *fix-names.sh* wartość zmiennej *baseurl*
+oraz ustawiamy nazwę naszego bloga:
+
+```sh
+./fix-names.sh /abc 'My ABC Blog'
+```
+
 Na koniec zapisujemy info w logu repozytorium i przesyłamy zmiany
 na *github.com*:
 
@@ -745,28 +752,22 @@ Sprawdzamy, czy skopiowany blog działa:
 
 ```sh
 cd blog
-jekyll serve -b /abc --watch  # http://localhost:4000/abc/
+jekyll serve -b /abc --watch
 ```
 
-```sh
-cd blog
-jekyll serve -b /abc --watch  # http://localhost:4000/abc/
-```
+Wprowadzone poprawki sprawdzamy na stronie:
+
+    http://localhost:4000/abc/
 
 
-*configure-blog.sh*  ustawienie zmiennej *baseurl*.
-Zmieniony skrypt przenieść do katalogu *blog*.
+**TODO:*
 
+1. tworzymy gałąź *gh-pages* na *github.com* (jak? [już było powyżej](link))
+1. pull(or fetch?) remote branch + add tracking branch *gh-pages*
+1. read-tree changes to gh-pages
+1. push gh-pages branch to git repo
 
-
-1. create bare gh-pages repo
-2. read-tree to gh-pages once more
-3. push gh-pages branch to git repo
-
-Sprawdzamy, czy to działa:
+Sprawdzamy, czy to działa na serwerze *github.io*::
 
     http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
 
-1. edytujemy skrypt *customize.sh* i uruchamiamy go.
-2. read-tree changes to gh-pages
-3. push gh-pages branch to git repo
