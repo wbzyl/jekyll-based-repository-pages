@@ -725,7 +725,7 @@ kopiujemy katalog *blog* z gałęzi *master* do lokalnego katalogu *blog*,
 usuwamy niepotrzebne już repozytorium *temp*:
 
 ```sh
-git remote add -f temp git://github.com/wbzyl/jekyll-based-repository-pages  # add & fetch
+git remote add -f temp git://github.com/wbzyl/jekyll-based-repository-pages # add&fetch
 git read-tree --prefix=blog/ -u temp/master:blog
 git remote rm temp
 ```
