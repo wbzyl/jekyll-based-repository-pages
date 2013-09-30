@@ -756,12 +756,14 @@ cd blog
 jekyll serve -b /abc --watch
 ```
 
-Wprowadzone poprawki sprawdzamy na stronie:
+i wchodzimy stronę:
 
     http://localhost:4000/abc/
 
 
 **TODO:*
+
+`/abc` – przykładowa nazwa (opisać)
 
 1. tworzymy gałąź *gh-pages* na *github.com* (jak? [już było powyżej](link))
 1. pull(or fetch?) remote branch + add tracking branch *gh-pages*
