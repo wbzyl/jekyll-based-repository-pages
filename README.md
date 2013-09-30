@@ -749,7 +749,7 @@ git push
 
 <!-- or use HTTP: git remote add -f jekyll-template https://github.com/wbzyl/jekyll-based-repository-pages -->
 
-Sprawdzamy, czy skopiowany blog działa:
+Sprawdzamy, czy skopiowany blog działa lokalnie:
 
 ```sh
 cd blog
