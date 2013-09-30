@@ -734,6 +734,7 @@ Zmieniamy za pomocą skryptu *fix-names.sh* wartość zmiennej *baseurl*
 oraz ustawiamy nazwę naszego bloga:
 
 ```sh
+cd blog
 ./fix-names.sh /abc 'My ABC Blog'
 ```
 
