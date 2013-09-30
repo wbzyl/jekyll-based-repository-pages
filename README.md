@@ -717,22 +717,47 @@ blockquote {
 }
 ```
 
+
 ## Instalacja na skróty
 
-**TODO:** Dodać do *customize.sh*  ustawienie zmiennej *baseurl*.
-Zmieniony skrypt przenieść do katalogu *blog*.
+Dodajemy *jekyll-based-repository-pages* jako zdalne repozytorium,
+kopiujemy katalog *blog* z gałęzi *master* do lokalnego katalogu *blog*,
+usuwamy niepotrzebne już repozytorium *temp*:
 
-Skrypt „na skróty” (ang. *shortcuts*):
+```sh
+git remote add -f temp git://github.com/wbzyl/jekyll-based-repository-pages  # add & fetch
+git read-tree --prefix=blog/ -u temp/master:blog
+git remote rm temp
+```
 
-1. remote add this repo
-2. read-tree z remote
+Na koniec zapisujemy info w logu repozytorium i przesyłamy zmiany
+na *github.com*:
 
-Sprawdzamy, czy wszystko działa:
+```sh
+git add blog/
+git commit -m "subtree merge in blog/"
+git push
+```
+
+<!-- or use HTTP: git remote add -f jekyll-template https://github.com/wbzyl/jekyll-based-repository-pages -->
+
+Sprawdzamy, czy skopiowany blog działa:
 
 ```sh
 cd blog
 jekyll serve -b /abc --watch  # http://localhost:4000/abc/
 ```
+
+```sh
+cd blog
+jekyll serve -b /abc --watch  # http://localhost:4000/abc/
+```
+
+
+*configure-blog.sh*  ustawienie zmiennej *baseurl*.
+Zmieniony skrypt przenieść do katalogu *blog*.
+
+
 
 1. create bare gh-pages repo
 2. read-tree to gh-pages once more
