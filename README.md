@@ -761,7 +761,7 @@ i wchodzimy stronę:
     http://localhost:4000/abc/
 
 
-**TODO:*
+**TODO:**
 
 `/abc` – przykładowa nazwa (opisać)
 
