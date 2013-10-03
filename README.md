@@ -720,11 +720,16 @@ blockquote {
 
 ## Instalacja na skróty
 
-Dodajemy *jekyll-based-repository-pages* jako zdalne repozytorium,
+Zakładamy, że dodajemy szablon do istniejącego repozytorium
+o nazwie ***abc***.
+
+Przechodzimy do katalogu głównego repozytorium,
+gdzie dodajemy jako zdalne repozytorium repozytorium *jekyll-based-repository-pages*,
 kopiujemy katalog *blog* z gałęzi *master* do lokalnego katalogu *blog*,
 usuwamy niepotrzebne już repozytorium *temp*:
 
 ```sh
+cd abc/
 git remote add -f temp git://github.com/wbzyl/jekyll-based-repository-pages # add&fetch
 git read-tree --prefix=blog/ -u temp/master:blog
 git remote rm temp
@@ -735,13 +740,14 @@ oraz ustawiamy nazwę naszego bloga:
 
 ```sh
 cd blog
-./fix-names.sh /abc 'My ABC Blog'
+./fix-names.sh /abc 'Blogging ABC'
 ```
 
 Na koniec zapisujemy info w logu repozytorium i przesyłamy zmiany
 na *github.com*:
 
 ```sh
+cd ../
 git add blog/
 git commit -m "subtree merge in blog/"
 git push
@@ -749,21 +755,15 @@ git push
 
 <!-- or use HTTP: git remote add -f jekyll-template https://github.com/wbzyl/jekyll-based-repository-pages -->
 
-Sprawdzamy, czy skopiowany blog działa lokalnie:
+Uruchamiamy serwer www i sprawdzamy, czy skopiowany blog działa lokalnie
+(*http://localhost:4000/abc/*):
 
 ```sh
 cd blog
 jekyll serve -b /abc --watch
 ```
 
-i wchodzimy stronę:
-
-    http://localhost:4000/abc/
-
-
-**TODO:**
-
-`/abc` – przykładowa nazwa (opisać)
+Jeśli blog działa, to spróbujemy go wdrożyć na serwerze Github.
 
 1. tworzymy gałąź *gh-pages* na *github.com* (jak? [już było powyżej](link))
 1. pull(or fetch?) remote branch + add tracking branch *gh-pages*
