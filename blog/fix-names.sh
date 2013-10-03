@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# ./fix-config.sh /xxx 'My Awesome XXX Blog' blog/_config.yml
+# run this from the blog/ directory
+#
+#   ./fix-config.sh /xxx 'My Awesome XXX Blog'
 
 git_repo_name=${1:-}
 blog_name=${2:-Your New Jekyll Site}
