@@ -720,16 +720,24 @@ blockquote {
 
 ## Instalacja na skróty
 
-Zakładamy, że dodajemy szablon do istniejącego repozytorium
-o nazwie ***abc***.
+Oczywiście, będziemy potrzebować jakiegoś repozytorium na
+serwerze [Github](https://github.com/) w którym utworzyliśmy,
+tak jak to opisano powyżej w *Ćwiczeniu 1*, gałąź *gh-pages*.
 
-Przechodzimy do katalogu głównego repozytorium,
-gdzie dodajemy jako zdalne repozytorium repozytorium *jekyll-based-repository-pages*,
-kopiujemy katalog *blog* z gałęzi *master* do lokalnego katalogu *blog*,
-usuwamy niepotrzebne już repozytorium *temp*:
+W przykładzie poniżej nazwa repozytorium to ***abc***.
+Zaczynamy od sklonowania rpozytorium. Po sklonowaniu,
+zmieniamy katalog na katalog główny repozytorium:
 
 ```sh
+git clone git@github.com:〈twój login na serwerze Github〉/abc.git
 cd abc/
+```
+
+Następnie dodajemy zdalne repozytorium *temp* do *jekyll-based-repository-pages*,
+kopiujemy katalog *blog* z gałęzi *master* do lokalnego katalogu *blog*
+i usuwamy, niepotrzebne już, *temp*:
+
+```sh
 git remote add -f temp git://github.com/wbzyl/jekyll-based-repository-pages # add&fetch
 git read-tree --prefix=blog/ -u temp/master:blog
 git remote rm temp
@@ -743,8 +751,7 @@ cd blog
 ./fix-names.sh /abc 'Blogging ABC'
 ```
 
-Na koniec zapisujemy info w logu repozytorium i przesyłamy zmiany
-na *github.com*:
+Zapisujemy info w logu repozytorium i przesyłamy zmiany na *github.com*:
 
 ```sh
 cd ../
@@ -753,10 +760,8 @@ git commit -m "subtree merge in blog/"
 git push
 ```
 
-<!-- or use HTTP: git remote add -f jekyll-template https://github.com/wbzyl/jekyll-based-repository-pages -->
-
-Uruchamiamy serwer www i sprawdzamy, czy skopiowany blog działa lokalnie
-(*http://localhost:4000/abc/*):
+Nadszedł najwyższy czas, żeby sprawdzić, czy blog działa lokalnie.
+W tym celu uruchamiamy serwer www (*http://localhost:4000/abc/*):
 
 ```sh
 cd blog
@@ -765,7 +770,7 @@ jekyll serve -b /abc --watch
 
 Jeśli blog działa, to spróbujemy go wdrożyć na serwerze Github.
 
-1. tworzymy gałąź *gh-pages* na *github.com* (jak? [już było powyżej](link))
+
 1. pull(or fetch?) remote branch + add tracking branch *gh-pages*
 1. read-tree changes to gh-pages
 1. push gh-pages branch to git repo
