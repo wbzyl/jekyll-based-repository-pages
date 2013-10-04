@@ -731,6 +731,11 @@ zmieniamy katalog na katalog główny repozytorium:
 ```sh
 git clone git@github.com:〈twój login na serwerze Github〉/abc.git
 cd abc/
+git checkout --track gh-pages
+git rm -f *
+git add .
+git commit -m "usunąłem wygenerowanego na Github bloga"
+git push
 ```
 
 Następnie dodajemy zdalne repozytorium *temp* do *jekyll-based-repository-pages*,
@@ -782,14 +787,6 @@ katalogu *_site* na gałęzi *gh-pages* i przenosimy ją do
 repozytorium na serwerze Github:
 
 ```sh
-# za pierwszym razem wykonujemy:
-git checkout --track gh-pages
-git rm -f *
-git add .
-git commit -m "usunąłem wygenerowanego na Github bloga"
-git push
-
-# następnym razem wystarczy:
 git checkout gh-pages
 
 git read-tree -m -u master:blog/_site/
