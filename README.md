@@ -783,7 +783,7 @@ git commit -m "Poprawki. Dodano _site do repo."
 ```
 
 Dopiero teraz, tak jak to opisano powyżej, zapisujemy zawartość
-katalogu *_site* na gałęzi *gh-pages* i przenosimy ją do
+katalogu *_site* na gałęzi *gh-pages* i przenosimy ją do
 repozytorium na serwerze Github:
 
 ```sh
