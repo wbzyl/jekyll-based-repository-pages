@@ -761,11 +761,11 @@ git push
 ```
 
 Nadszedł najwyższy czas, żeby sprawdzić, czy blog działa lokalnie.
-W tym celu uruchamiamy serwer www (*http://localhost:4000/abc/*):
+W tym celu uruchamiamy serwer www:
 
 ```sh
 cd blog
-jekyll serve -b /abc --watch
+jekyll serve -b /abc --watch  # http://localhost:4000/abc/
 ```
 
 Jeśli blog działa, to spróbujemy go wdrożyć na serwerze Github.
