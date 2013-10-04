@@ -769,13 +769,33 @@ jekyll serve -b /abc --watch  # http://localhost:4000/abc/
 ```
 
 Jeśli blog działa, to spróbujemy go wdrożyć na serwerze Github.
+Ale najpierw dodamy wszystkie zmiany do repozytorium:
 
+    :::sh
+    cd ..      # opuszczamy katalog blog/
+    git add .
+    git commit -m "Poprawki. Dodano _site do repo."
 
-1. pull(or fetch?) remote branch + add tracking branch *gh-pages*
-1. read-tree changes to gh-pages
-1. push gh-pages branch to git repo
+Dopiero teraz, tak jak to opisano powyżej, zapisujemy zawartość
+katalogu *_site* na gałęzi *gh-pages* i przenosimy ją do
+repozytorium na serwerze Github:
 
-Sprawdzamy, czy to działa na serwerze *github.io*::
+```sh
+# za pierwszym razem wykonujemy:
+git checkout --track gh-pages
+git rm -f *
+git add .
+git commit -m "usunąłem wygenerowanego na Github bloga"
+git push
+
+# następnym razem wystarczy:
+git checkout gh-pages
+
+git read-tree -m -u master:blog/_site/
+git commit -m "copy content of blog/ from master to gh-pages"
+git checkout master
+```
+
+Po chwili sprawdzamy pod takim URL, czy blog działa:
 
     http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
-
