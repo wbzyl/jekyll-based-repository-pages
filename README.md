@@ -737,6 +737,7 @@ git rm -f *
 git add .
 git commit -m "usunąłem wygenerowanego na Github bloga"
 git push
+git checkout master
 ```
 
 Następnie dodajemy zdalne repozytorium *temp* do *jekyll-based-repository-pages*,
