@@ -793,7 +793,7 @@ cd ..                  # opuszczamy katalog blog/
 git checkout gh-pages
 
 git read-tree -m -u master:blog/_site/
-git commit -m "copy content of blog/ from master to gh-pages"
+git commit -m "Skopiowano zawartość katalogu blog/ z master do gh-pages"
 git checkout master
 ```
 
