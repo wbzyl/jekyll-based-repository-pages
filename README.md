@@ -763,7 +763,7 @@ Zapisujemy info w logu repozytorium i przesyłamy zmiany na *github.com*:
 ```sh
 cd ../
 git add blog/
-git commit -m "subtree merge in blog/"
+git commit -m "Wykonano read-tree z temp/master:blog/."
 git push
 ```
 
@@ -779,9 +779,9 @@ Jeśli blog działa, to spróbujemy go wdrożyć na serwerze Github.
 Ale najpierw dodamy wszystkie zmiany do repozytorium:
 
 ```sh
-cd ..      # opuszczamy katalog blog/
 git add .
 git commit -m "Poprawki. Dodano _site do repo."
+git push
 ```
 
 Dopiero teraz, tak jak to opisano powyżej, zapisujemy zawartość
@@ -789,6 +789,7 @@ katalogu *_site* na gałęzi *gh-pages* i przenosimy ją do
 repozytorium na serwerze Github:
 
 ```sh
+cd ..                  # opuszczamy katalog blog/
 git checkout gh-pages
 
 git read-tree -m -u master:blog/_site/
