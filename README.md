@@ -780,7 +780,7 @@ Ale najpierw dodamy wszystkie zmiany do repozytorium:
 
 ```sh
 git add .
-git commit -m "Poprawki. Dodano _site do repo."
+git commit -m "Poprawki: dodano katalog _site do repo oraz wykonano skrypt fix-names.sh."
 git push
 ```
 
