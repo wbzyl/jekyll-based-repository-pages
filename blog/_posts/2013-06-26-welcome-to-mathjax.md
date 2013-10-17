@@ -38,7 +38,7 @@ Portal „Vision Objects”:
 Różne rzeczy:
 
 [List of free programming books](http://resrc.io/list/10/list-of-free-programming-books/) –
-[Contribute to this list on GitHub](https://github.com/vhf/free-programming-books)
+[contribute to this list on GitHub](https://github.com/vhf/free-programming-books)
 
 
 ### Inline Math
