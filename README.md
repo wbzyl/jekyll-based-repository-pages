@@ -731,7 +731,8 @@ zmieniamy katalog na katalog główny repozytorium:
 ```sh
 git clone git@github.com:〈twój login na serwerze Github〉/abc.git
 cd abc/
-git checkout --track gh-pages
+git pull
+git checkout --track origin/gh-pages
 git rm -f *
 git add .
 git commit -m "usunąłem wygenerowanego na Github bloga"
