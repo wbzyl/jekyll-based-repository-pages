@@ -797,6 +797,6 @@ git commit -m "Skopiowano zawartość katalogu blog/ z master do gh-pages"
 git checkout master
 ```
 
-Po chwili sprawdzamy pod takim URL, czy blog działa:
+Po chwili sprawdzamy czy blog działa tutaj:
 
     http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
