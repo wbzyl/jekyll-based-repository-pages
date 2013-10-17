@@ -5,8 +5,6 @@ date:   2013-06-26 16:16:16
 categories: jekyll kramdown latex math
 ---
 
-TeX + MathJax examples.
-
 <blockquote>
  <img src="{{ site.baseurl }}/images/davide_cervone.jpg" alt="Davide Cervone">
 <p>
@@ -19,7 +17,7 @@ TeX + MathJax examples.
 <p class="author">— Davide Cervone</p>
 </blockquote>
 
-## Jak wklepujemy matematykę na klawiaturze?
+### Jak wklepywać matematykę na klawiaturze?
 
 Matematyka & HTML:
 
