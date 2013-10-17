@@ -19,6 +19,25 @@ TeX + MathJax examples.
 <p class="author">— Davide Cervone</p>
 </blockquote>
 
+## Jak wklepujemy matematykę na klawiaturze?
+
+Matematyka & HTML:
+
+* [MathJax TeX and LaTeX Support](http://docs.mathjax.org/en/latest/tex.html)
+
+Ściągi:
+
+* Michael Downes,
+  [Short Math guide for LaTeX](ftp://ftp.ams.org/ams/doc/amsmath/short-math-guide.pdf)
+* Winston chang,
+  [LaTeX2ε Cheat Sheet](http://www.stdout.org/~winston/latex/latexsheet-a4.pdf)
+
+Portal „Vision Objects”:
+
+* [Demonstration Portal](http://webdemo.visionobjects.com/home.html#portal):
+  Web Equation, Web Shape, …
+
+
 ### Inline Math
 
 Let $\alpha$ be the fifth root of unity.
