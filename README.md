@@ -106,8 +106,9 @@ Zaczynamy od instalacji języka Ruby oraz gemów
 
 ```sh
 gem install jekyll
-gem install coderay   # kolorowanie składni
-gem install kramdown  # Markdown + LaTeX + kolorowanie składni przez coderay
+gem install coderay           # kolorowanie składni
+gem install kramdown          # Markdown + LaTeX + kolorowanie składni przez coderay
+gem install less therubyracer # LESS zamiast CSS
 ```
 
 Następnie generujemy szablon bloga w katalogu *blog*
