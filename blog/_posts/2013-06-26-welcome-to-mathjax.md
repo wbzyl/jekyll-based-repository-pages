@@ -22,6 +22,9 @@ categories: jekyll kramdown latex math
 Matematyka & HTML:
 
 * [MathJax TeX and LaTeX Support](http://docs.mathjax.org/en/latest/tex.html)
+* Carol JVF Burns,
+  [TEX Commands available in MathJax](http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm)
+
 
 Ściągi:
 
