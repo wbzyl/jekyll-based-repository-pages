@@ -802,3 +802,7 @@ git push
 Po chwili sprawdzamy czy blog działa tutaj:
 
     http://〈nazwa użytkownika〉.github.io/〈nazwa repozytorium〉/
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/wbzyl/jekyll-based-repository-pages/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
